@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta charset="utf-8" />
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <title>OBW Website</title>
+
+    <!-- fontawsome CSS -->
+    <link rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous" />
+    <link rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css"
+      crossorigin="anonymous" />
+
+    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55"
+      rel="stylesheet">
+
+    <!--google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous">
+
+    <!-- jQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap 5 JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+
+    <link rel=stylesheet type=text/css href="css/slick.css" />
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
+    <!-- custom JS -->
+    <script src="website_script.js"></script>
+
+  </head>
+
+  <body>
+    <style>
+
+
+</style>
+    <header class="desk_header d-block">
+      <div class="custom_container">
+        <div class="d-flex align-items-center justify-content-between w-100">
+          <a href="/" class="header_logo d-flex">
+            <img src="images/logo.png"
+              class="object-fit-cover w-100" alt="Logo" />
+          </a>
+          <div class="header_listing d-lg-flex d-none align-items-center">
+            <a>home</a>
+            <a>about us</a>
+            <a>campuses</a>
+            <a>Alumni portal</a>
+            <a>Academics</a>
+            <a>contact</a>
+          </div>
+          <div class="header_btns d-lg-flex d-none">
+            <a>search</a>
+            <a class="header_login_btn">Login</a>
+          </div>
+
+          <a class="header_toggle_btn d-lg-none d-flex"
+            data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas"
+            aria-controls="navbarOffcanvas" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fal fa-bars"></i></a>
+        </div>
+      </div>
+    </header>
+
+    <section class="home_banner d-inline-block w-100 position-relative">
+
+      <div class="home_Banner_slider overflow-hidden m-0">
+        <div class="home_banner_slide m-0">
+          <figure class="w-100 m-0 position-relative">
+            <img class="w-100 h-100 m-0 object-fit-cover"
+              src="images/home_banner1.png" />
+            <section class="home_banner_text_box w-100 h-100">
+              <div class="home_banner_container">
+                <div
+                  class="home_banner_text_parent d-flex flex-column align-items-center justify-content-center w-100 h-100">
+                  <div
+                    class="home_banner_content d-flex flex-column w-100 text-center">
+                    <small>Lacas</small>
+                    <h2>Empowering lifelong learners from
+                      primary to A-levels</h2>
+                    <div
+                      class="home_banner_btn d-flex justify-content-center align-items-center w-100">
+                      <a href="#">Enroll now</a>
+                      <a href="#">About LACAS</a></div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </figure>
+        </div>
+        <div class="home_banner_slide m-0">
+          <figure class="w-100 m-0 position-relative">
+            <img class="w-100 h-100 m-0 object-fit-cover"
+              src="images/home_banner2.png" />
+            <section class="home_banner_text_box w-100 h-100">
+              <div class="home_banner_container">
+                <div
+                  class="home_banner_text_parent d-flex flex-column align-items-center justify-content-center w-100 h-100">
+                  <div
+                    class="home_banner_content d-flex flex-column w-100 text-center">
+                    <small>Lacas</small>
+                    <h2>Empowering lifelong learners from
+                      primary to A-levels</h2>
+                    <div
+                      class="home_banner_btn d-flex justify-content-center align-items-center w-100">
+                      <a href="#">Enroll now</a>
+                      <a href="#">About LACAS</a></div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </figure>
+        </div>
+        <div class="home_banner_slide m-0">
+          <figure class="w-100 m-0 position-relative">
+            <img class="w-100 h-100 m-0 object-fit-cover"
+              src="images/home_banner3.png" />
+            <section class="home_banner_text_box w-100 h-100">
+              <div class="home_banner_container">
+                <div
+                  class="home_banner_text_parent d-flex flex-column align-items-center justify-content-center w-100 h-100">
+                  <div
+                    class="home_banner_content d-flex flex-column w-100 text-center">
+                    <small>Lacas</small>
+                    <h2>Empowering lifelong learners from
+                      primary to A-levels</h2>
+                    <div
+                      class="home_banner_btn d-flex justify-content-center align-items-center w-100">
+                      <a href="#">Enroll now</a>
+                      <a href="#">About LACAS</a></div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </figure>
+        </div>
+        <div class="home_banner_slide m-0">
+          <figure class="w-100 m-0 position-relative">
+            <img class="w-100 h-100 m-0 object-fit-cover"
+              src="images/home_banner4.png" />
+            <section class="home_banner_text_box w-100 h-100">
+              <div class="home_banner_container">
+                <div
+                  class="home_banner_text_parent d-flex flex-column align-items-center justify-content-center w-100 h-100">
+                  <div
+                    class="home_banner_content d-flex flex-column w-100 text-center">
+                    <small>Lacas</small>
+                    <h2>Empowering lifelong learners from
+                      primary to A-levels</h2>
+                    <div
+                      class="home_banner_btn d-flex justify-content-center align-items-center w-100">
+                      <a href="#">Enroll now</a>
+                      <a href="#">About LACAS</a></div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </figure>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="home_sec2 d-inline-block w-100">
+      <div class="custom_container">
+        <div class="home_sec2_box d-grid w-100 h-100">
+          <div class="home_sec2_box1 d-grid w-100 h-100">
+            <div class="home_sec2_box1_inner d-grid w-100 h-100">
+              <div class="home_sec2_box1_inner_one d-grid w-100 h-100">
+                <figure class="position-relative w-100 h-100 m-0"><img
+                    class="w-100 h-100 object-fit-cover"
+                    src="images/homesec1-1.png"></figure>
+                <figure class="position-relative w-100 h-100 m-0"><img
+                    class="w-100 h-100 object-fit-cover"
+                    src="images/homesec1-4.png"></figure>
+              </div>
+              <div class="home_sec2_box1_inner_two d-grid w-100 h-100">
+                <figure class="position-relative w-100 h-100 m-0"><img
+                    class="w-100 h-100 object-fit-cover"
+                    src="images/homesec1-3.png"></figure>
+              </div>
+            </div>
+            <h2
+              class="home_sec2_box2_content d-md-none d-flex w-100 h-100 text-center align-items-center justify-content-center">To
+              live <br />in truth</h2>
+            <h2
+              class="home_sec2_box1_content d-md-flex d-none w-100 h-100 text-center align-items-center justify-content-center">Leading
+              the way with
+              Academic Excellence</h2>
+          </div>
+          <div class="home_sec2_box2 d-grid w-100 h-100">
+            <h2
+              class="home_sec2_box2_content d-md-flex d-none w-100 h-100 text-center align-items-center justify-content-center">To
+              live <br />in truth</h2>
+            <figure class="position-relative w-100 h-100 m-0"><img
+                class="w-100 h-100 object-fit-cover"
+                src="images/homesec1-2.png"></figure>
+            <h2
+              class="home_sec2_box1_content d-md-none d-flex w-100 h-100 text-center align-items-center justify-content-center">Leading
+              the way with
+              Academic Excellence</h2>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="home_sec3 d-inline-block w-100 position-relative">
+
+      <div class="home_sec3_slider overflow-hidden m-0">
+        <div class="home_sec3_slide m-0">
+          <figure class="w-100 m-0 position-relative">
+            <img class="w-100 h-100 m-0 object-fit-cover"
+              src="images/Group 1000010417.png" />
+            <section class="home_sec3_text_box w-100 h-100">
+              <div class="home_sec3_container">
+                <div
+                  class="home_sec3_content d-flex flex-column w-100 text-center">
+                  <h2>Why LACAS?</h2>
+                  <p>The LACAS School Network is the embodiment of educational
+                    excellence, upholding a rich legacy of over 37 years. LACAS
+                    has set standards of excellence in Pakistan, equipping
+                    students with the skills needed to succeed in both practical
+                    and theoretical domains across diverse sectors and fields.
+                    The education fosters empathy and societal understanding,
+                    instilling in students the responsibility to improve the
+                    lives of communities locally and globally. The mission is to
+                    provide a secure, academically rigorous and inclusive
+                    learning environment that empowers all students to reach
+                    their full potential. LACAS believes in the power of the
+                    individual to influence the world and is determined to equip
+                    the next generation of leaders with the skills to realize
+                    their aspirations. As LACAS moves forward, it continues to
+                    innovate and evolve, preparing students to be future-ready
+                    in an ever-changing global arena.</p>
+
+                </div>
+              </div>
+            </section>
+          </figure>
+        </div>
+
+        <div class="home_sec3_slide m-0">
+          <figure class="w-100 m-0 position-relative">
+            <img class="w-100 h-100 m-0 object-fit-cover"
+              src="images/Group 1000010418.png" />
+            <section class="home_sec3_text_box w-100 h-100">
+              <div class="home_sec3_container">
+                <div
+                  class="home_sec3_content d-flex flex-column w-100 text-center">
+                  <h2>Top University Admissions</h2>
+                  <p>The Guidance and Career Counselling departments provide
+                    information and assistance to all LACAS students from
+                    subject selection in O Level and A Level to university
+                    applications and placements. The counselling offices conduct
+                    both individual and group sessions with students to
+                    facilitate them with their university choices, inform them
+                    about available scholarships/financial aid and assist them
+                    with university applications for both foreign and local
+                    universities.<br />
+                    Annual college fairs are held every year at the A Level
+                    campuses where universities from all over the world
+                    <!-- participate. University representatives visit the campuses,
+                    guide the students and provide them with insights into their
+                    respective colleges. The counselling departments also
+                    conduct seminars where local and international colleges
+                    visit and give detailed talks on their admission processes
+                    and requirements. --><br />
+                    The respective Guidance Counselling Departments at LACAS A
+                    Level Burki and A Level Johar Town have secured millions of
+                    dollars’ worth of financial assistance for our students
+                    every year. Admission into Princeton, Harvard, Williams
+                    College, Georgetown, the London School of Economics and
+                    Political Science and Imperial College London among many
+                    other excellent institutions is a testament to the quality
+                    and dedication of these departments.</p>
+
+                </div>
+              </div>
+            </section>
+          </figure>
+        </div>
+
+        <div class="home_sec3_slide m-0">
+          <figure class="w-100 m-0 position-relative">
+            <img class="w-100 h-100 m-0 object-fit-cover"
+              src="images/Group 1000010419.png" />
+            <section class="home_sec3_text_box w-100 h-100">
+              <div class="home_sec3_container">
+                <div
+                  class="home_sec3_content d-flex flex-column w-100 text-center">
+                  <h2>Highly Qualified Faculty</h2>
+                  <p>At LACAS, our faculty comprises highly qualified educators
+                    dedicated to nurturing academic excellence and personal
+                    growth. Our dedication to maintaining smaller class sizes
+                    allows for individual attention, enabling each student to
+                    receive personalized guidance and support. This approach
+                    ensures that students benefit from a more tailored learning
+                    experience, which fosters both academic achievement and
+                    personal development.<br />
+                    Our teachers are passionate about creating a stimulating and
+                    nurturing environment. They encourage critical thinking,
+                    creativity, and a love for lifelong learning, helping
+                    students reach their full potential. By integrating modern
+                    teaching methodologies and providing individualized support,
+                    our faculty plays a pivotal role in shaping the future
+                    leaders of tomorrow, making LACAS a beacon of educational
+                    excellence.</p>
+
+                </div>
+              </div>
+            </section>
+          </figure>
+        </div>
+
+        <div class="home_sec3_slide m-0">
+          <figure class="w-100 m-0 position-relative">
+            <img class="w-100 h-100 m-0 object-fit-cover"
+              src="images/Group 1000010420.png" />
+            <section class="home_sec3_text_box w-100 h-100">
+              <div class="home_sec3_container">
+                <div
+                  class="home_sec3_content d-flex flex-column w-100 text-center">
+                  <h2>Campus Life at Lacas</h2>
+                  <p>Campus life at LACAS is vibrant, inclusive, and designed to
+                    nurture the holistic development of every student. We
+                    provide a dynamic environment where academic rigour is
+                    balanced with a wide array of extracurricular activities.
+                    Students have access to state-of-the-art facilities,
+                    including science labs, art spaces, and sports venues,
+                    ensuring that they can explore their interests both inside
+                    and outside the classroom. From student-led clubs and
+                    societies to inter-school competitions, every aspect of our
+                    campus life is designed to inspire creativity,
+                    collaboration, and leadership.</p>
+
+                  <p> Our campus inculcates a strong sense of community, where
+                    students, teachers, and staff work together to create a
+                    positive and enriching experience. Through various events,
+                    cultural activities, and social responsibility programs,
+                    students are encouraged to engage with the world around
+                    them, developing empathy and global awareness. At LACAS, we
+                    believe that education extends beyond academics, and our
+                    campus life reflects our commitment to producing
+                    well-rounded individuals who are prepared for the challenges
+                    of tomorrow.</p>
+
+                </div>
+              </div>
+            </section>
+          </figure>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="home_sec4 d-inline-block w-100">
+      <div class="home4_grid d-grid w-100">
+        <figure class="w-100 h-100 position-relative m-0 overflow-hidden">
+          <img class="w-100 h-100 object-fit-cover"
+            src="images/Property 1=Default.png">
+          <figcaption class="position-absolute w-100">
+            <div
+              class="home4_content d-flex flex-column w-100 text-center align-items-center justify-content-start">
+              <h3>Reach pre-school</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. </p>
+            </div>
+          </figcaption>
+        </figure>
+        <figure class="w-100 h-100 position-relative m-0  overflow-hidden">
+          <img class="w-100 h-100 object-fit-cover"
+            src="images/Property 1=Default (1).png">
+          <figcaption class="position-absolute w-100">
+            <div
+              class="home4_content d-flex flex-column w-100 text-center align-items-center justify-content-start">
+              <h3>Primary to Middle
+                School</h3>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus
+                qui blanditiis praesentium voluptatum deleniti atque similique
+              </p>
+            </div>
+          </figcaption>
+        </figure>
+        <figure class="w-100 h-100 position-relative m-0  overflow-hidden">
+          <img class="w-100 h-100 object-fit-cover"
+            src="images/Property 1=Default (2).png">
+          <figcaption class="position-absolute w-100">
+            <div
+              class="home4_content d-flex flex-column w-100 text-center align-items-center justify-content-start">
+              <h3>O-Level</h3>
+              <p>The LACAS O Level program equips students with critical
+                thinking,
+                analytical skills, and global perspectives for success in a
+                modern world</p>
+            </div>
+          </figcaption>
+        </figure>
+        <figure class="w-100 h-100 position-relative m-0  overflow-hidden">
+          <img class="w-100 h-100 object-fit-cover"
+            src="images/Property 1=Default (3).png">
+          <figcaption class="position-absolute w-100">
+            <div
+              class="home4_content d-flex flex-column w-100 text-center align-items-center justify-content-start">
+              <h3>A-Level</h3>
+              <p>The LACAS A Level program empowers students with advanced
+                academic knowledge and skills,
+                preparing them for top-tier universities globally</p>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="home_sec5 d-inline-block w-100">
+      <div class="custom_container">
+        <div
+          class="home5_heading d-flex flex-column w-100 align-items-center justify-content-center text-center">
+
+          <h2>Life at LACAS</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum</p>
+        </div>
+
+        <div class="home5_listing_main d-grid w-100 ">
+          <div class="home5_single_list  d-grid w-100 align-items-center">
+            <figure class="home5_list1 w-100 d-md-grid d-grid">
+              <img class="w-100 h-100 object-fit-cover" lazy="loading"
+                src="images/Mask group (17).png">
+              <img class="home5_transform w-100 h-100 object-fit-cover"
+                lazy="loading"
+                src="images/Mask group (18).png">
+            </figure>
+            <div class="home5_listing_content d-flex flex-column">
+              <small>Technology</small>
+              <h3>Innovation and Inspiration</h3>
+              <img class="w-100 h-100 object-fit-cover d-md-none d-none"
+                lazy="loading"
+                src="images/Mask group (18).png">
+              <div class="home5_des">
+                <p>At LACAS, we are dedicated to integrating technology into
+                  every classroom, ensuring our students are prepared to thrive
+                  in a digital world. Our cutting-edge Eyeris Labs foster
+                  hands-on learning and experimentation, while the Robotics
+                  Through Art program combines creativity and engineering to
+                  develop critical skills through engaging STEAM projects. With
+                  the Oxford Reading Buddy Programme, students enjoy
+                  personalized reading experiences that enhance vocabulary and
+                  comprehension.
+                  By embracing advanced technologies across all subjects, we
+                  lead with innovation, empowering students for a tech-driven
+                  future with confidence and creativity.</p>
+              </div>
+              <img class="w-100 h-100 object-fit-cover d-md-none d-none"
+                lazy="loading"
+                src="images/Mask group (17).png">
+              <div class="home5_btn d-flex"><a>See more</a></div>
+            </div>
+          </div>
+
+          <div class="home5_single_list  d-grid w-100 align-items-center">
+
+            <div class="home5_listing_content d-flex flex-column">
+              <small>academic excellence</small>
+              <h3>Studies Meets Ambition</h3>
+              <img class="w-100 h-100 object-fit-cover d-md-none d-none"
+                lazy="loading"
+                src="images/Mask group (19).png">
+              <div class="home5_des">
+                <p>At LACAS, we take pride in our outstanding results in
+                  Cambridge International Examinations (CIE), which reflect our
+                  commitment to academic excellence. Our students consistently
+                  achieve top scores, allowing them to gain admission to some of
+                  the best colleges and universities around the world. </p>
+                <p>This success not only opens doors to higher education but
+                  also instills confidence in our students, empowering them to
+                  pursue their ambitions fearlessly. We believe that with the
+                  right support and guidance, every student can realize their
+                  potential and achieve their dreams.</p>
+              </div>
+              <img class="w-100 h-100 object-fit-cover d-md-none d-none"
+                lazy="loading"
+                src="images/Mask group (20).png">
+              <div class="home5_btn d-flex"><a>See more</a></div>
+            </div>
+            <figure
+              class="home5_list2 home_5_reverse_img w-100 d-md-grid d-grid">
+              <img class="home5_transform w-100 h-100 object-fit-cover"
+                lazy="loading"
+                src="images/Mask group (19).png">
+              <img class="w-100 h-100 object-fit-cover" lazy="loading"
+                src="images/Mask group (20).png">
+            </figure>
+          </div>
+
+          <div class="home5_single_list  d-grid w-100 align-items-center">
+            <figure class="home5_list1 w-100 d-md-grid d-grid">
+              <img class="w-100 h-100 object-fit-cover" lazy="loading"
+                src="images/Mask group (21).png">
+              <img class="home5_transform w-100 h-100 object-fit-cover"
+                lazy="loading"
+                src="images/Mask group (22).png">
+            </figure>
+            <div class="home5_listing_content d-flex flex-column">
+              <small>Sports</small>
+              <h3>Champions in Training</h3>
+              <img class="w-100 h-100 object-fit-cover d-md-none d-none"
+                lazy="loading"
+                src="images/Mask group (22).png">
+              <div class="home5_des">
+                <p>
+                  At LACAS, we believe that sports are essential for holistic
+                  development, fostering teamwork, discipline, and resilience in
+                  our students. Our state-of-the-art facilities, including a
+                  futsal court, basketball courts, and football fields, provide
+                  ample opportunities for students to engage in physical
+                  activity and develop their athletic skills. </p>
+                <p>Events like the LACAS Super League and Power Up invite
+                  students from various schools to participate, creating a
+                  vibrant culture of competition and sportsmanship. These
+                  experiences not only enhance physical fitness but also promote
+                  lifelong values such as leadership and camaraderie, preparing
+                  our students to excel both on and off the field.
+                </p>
+              </div>
+              <img class="w-100 h-100 object-fit-cover d-md-none d-none"
+                lazy="loading"
+                src="images/Mask group (21).png">
+              <div class="home5_btn d-flex"><a>See more</a></div>
+            </div>
+          </div>
+
+          <div class="home5_single_list  d-grid w-100 align-items-center">
+
+            <div class="home5_listing_content d-flex flex-column">
+              <small>Extra curricular</small>
+              <h3>Explore, Express, Excel</h3>
+              <img class="w-100 h-100 object-fit-cover d-md-none d-none"
+                lazy="loading"
+                src="images/Mask group (23).png">
+              <div class="home5_des">
+                <p>At LACAS, we recognize the importance of extracurricular
+                  activities in nurturing well-rounded individuals. Our vibrant
+                  programs in debate, theater, and music encourage students to
+                  explore their passions and express themselves creatively.</p>
+                <p> Events such as our annual plays and the LACAS Model United
+                  Nations (MUN) provide platforms for students to showcase their
+                  talents and engage with real-world issues, promoting critical
+                  thinking and collaboration. Through these enriching
+                  experiences, we empower our students to excel not only
+                  academically but also as expressive, confident individuals
+                  ready to take on the challenges of the future.</p>
+
+              </div>
+              <img class="w-100 h-100 object-fit-cover d-md-none d-none"
+                lazy="loading"
+                src="images/Mask group (25).png">
+              <div class="home5_btn d-flex"><a>See more</a></div>
+            </div>
+            <figure
+              class="home5_list2 home_5_reverse_img w-100 d-md-grid d-grid">
+              <img class="home5_transform w-100 h-100 object-fit-cover"
+                lazy="loading"
+                src="images/Mask group (23).png">
+              <img class="w-100 h-100 object-fit-cover" lazy="loading"
+                src="images/Mask group (25).png">
+            </figure>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    
+    
+            
+        
+
+    <footer class="footer_parent d-flex flex-column w-100">
+      <section class="newsletter_section d-inline-block w-100">
+        <div class="custom_container">
+          <div class="newsletter_box d-grid w-100 align-items-center">
+            <div class="newsletter_content d-flex flex-column">
+              <h3>NEWSLETTER</h3>
+              <p> Subscribe for our updates and news </p>
+            </div>
+            <form>
+              <div class="newsletter_fields d-flex flex-column position-relative">
+                <i class="far fa-envelope"></i>
+                <input type="email" name="email" placeholder="Enter your email here" />
+                <button class="submitted btn"> Submit </button>
+              </div>
+            </form>
+         
+          </div>
+        </div>
+      </section>
+    <section class="footer_section d-inline-block w-100">
+      <div class="custom_container">
+        <div
+          class="footer_header d-flex flex-column w-100 align-items-center justify-content-center text-center">
+          <figure class="m-0"><img class="w-100 h-100 object-fit-cover"
+              src="images/footerlogo.png"></figure>
+          <p>LACAS School Network is dedicated to fostering academic excellence,
+            creativity, and personal growth in every student. With a commitment
+            to innovation and holistic development, we empower young minds to
+            excel in academics, sports, and extracurricular pursuits, preparing
+            them for success in a rapidly evolving world. Our legacy of over
+            three decades continues to shape future leaders who are confident,
+            compassionate, and ready to make a difference.</p>
+        </div>
+        <div class="footer_content_parent d-grid w-100">
+          <div class="footer_content d-grid w-100">
+
+            <div class="footer_content_box">
+
+              <div
+                class="footer_listing_header position-relative">
+                <h3>Site Links</h3>
+              </div>
+              <div>
+                <ul class="footer_listing d-flex flex-column w-100">
+                  <li><a>Home</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Campuses</a></li>
+                  <li><a>Academics</a></li>
+                  <li><a>Find LACAS</a></li>
+                </ul>
+              </div>
+
+            </div>
+            <div class="footer_content_box">
+
+              <div
+                class="footer_listing_header position-relative">
+                <h3>Quick links</h3>
+              </div>
+              <div>
+                <ul class="footer_listing d-flex flex-column w-100">
+                  <li><a>Newsletter</a></li>
+                  <li><a>Bulletin Board</a></li>
+                  <li><a>Prospectus</a></li>
+                  <li><a>Career</a></li>
+                  <li><a>Fee Bills</a></li>
+                </ul>
+              </div>
+
+            </div>
+            <div class="footer_content_box">
+
+              <div
+                class="footer_listing_header position-relative">
+                <h3>Academics</h3>
+              </div>
+              <div>
+                <ul class="footer_listing d-flex flex-column w-100">
+                  <li><a>LACAS Portal</a></li>
+                  <li><a>School Policies</a></li>
+                  <li><a>Events Calendar</a></li>
+                  <li><a>Academic Calendar</a></li>
+                </ul>
+              </div>
+
+            </div>
+            <div class="footer_content_box">
+
+              <div
+                class="footer_listing_header position-relative">
+                <h3>Connect with us</h3>
+              </div>
+              <div>
+                <ul class="footer_listing d-flex flex-column w-100">
+                  <li><a>Facebook</a></li>
+                  <li><a>Instagram</a></li>
+                  <li><a>Linkedin</a></li>
+                </ul>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="footer_content_box">
+
+            <div
+              class="footer_listing_header position-relative text-center">
+              <h3>Download App</h3>
+            </div>
+            <div>
+              <ul
+                class="footer_app_links footer_listing d-flex flex-column w-100">
+                <li><a><img
+                      class="w-100 h-100 object-fit-cover"
+                      src="images/google (1).png"></a></li>
+                <li><a><img
+                      class="w-100 h-100 object-fit-cover"
+                      src="images/google (2).png"></a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+        <div
+          class="copyright_footer d-flex align-items-center justify-content-center w-100 text-center">
+          <p>LACAS School System 2024. All rights reserved</p>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+
+  </body>
+
+  <script>
+  $(document).ready(function() {  
+
+       //home banner slider script
+       $('.home_Banner_slider').slick({
+    pauseOnHover: false,
+    pauseOnFocus: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    arrows: false,
+    dots: true,
+    fade: true,
+    dotsClass: "home_banner_dots"
+  });
+
+  // Wrap the dots in the specified containers
+  $('.home_banner_dots').wrap("<div class='home_banner_dots_wrapper'></div>");
+  $('.home_banner_dots').wrap("<div class='custom_container'></div>");
+  
+      
+   //slider for home second banner
+
+  // Array of custom text for each dot
+  var dotLabels = ['Excellence In Education', 'Top University Admissions', 'Highly Qualified Faculty', 'Campus life at LACAS'];
+
+  // Initialize Slick slider
+  $('.home_sec3_slider').slick({
+    pauseOnHover: false,
+    pauseOnFocus: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 5000,
+    arrows: false,
+    dots: true,
+    fade: true,
+    dotsClass: "home_sec3_dots",
+     // Custom paging function to add text with each dot
+     customPaging: function(slider, i) {
+      return '<span class="dot-label">' + dotLabels[i] + '</span><button type="button" role="tab">' + (i + 1) + '</button>';
+    }
+      });
+    
+    $('.home_sec3_dots').wrap("<div class='home_sec3_dots_wrapper'></div>");
+    $('.home_sec3_dots').wrap("<div class='home_sec3_dots_container'></div>");
+  });
+
+
+    
+    </script>
+
+</html>
