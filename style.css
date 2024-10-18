@@ -65,7 +65,7 @@ button:focus-visible {
 /* header style  */
 /* for home page only  */
 .desk_header {
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0px;
   width: 100%;
