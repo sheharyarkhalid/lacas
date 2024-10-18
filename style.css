@@ -1932,9 +1932,10 @@ max-width: 100% !important;
 }
 div#CampusesMenu .modal-fullscreen-sm-down .modal-content {
 border-radius: unset !important;
+background: transparent !important;
 }
 .menu1_parent{
-background-image: url('images/mega_menu1.png');
+background-image: url('images/Group 1000010417 (1).png');
 background-size: cover;
 background-repeat: no-repeat; 
 padding: 70px 20px 200px 20px;
@@ -1952,6 +1953,7 @@ color: #fff;
 }
 .menu1_header img{
   max-width: 184px;
+  margin-right: 128px;
 }
 .menu1_header a{
 font-size: 25px;
@@ -2007,6 +2009,7 @@ color: #fff !important;
 }
 .menu1_header img {
   max-width: 148px;
+  margin-right: 60px;
 }
 .menu1_header a {
   font-size: 20px;
@@ -2085,6 +2088,7 @@ color: #fff !important;
   }
   .menu1_header img {
       max-width: 120px;
+      margin-right: 0px;
   }
   .menu1_box {
       gap: 20px 20px;
@@ -2103,9 +2107,10 @@ max-width: 100% !important;
 }
 div#AcademicsMenu .modal-fullscreen-sm-down .modal-content {
 border-radius: unset !important;
+background: transparent !important;
 }
   .menu2_parent{
-background-image: url('images/mega_menu1.png');
+    background-image: url('images/Mask group (35).png');
 background-size: cover;
 background-repeat: no-repeat; 
 padding: 70px 20px 200px 20px;
