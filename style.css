@@ -463,9 +463,7 @@ div#mobileMenu {
 }
 
 /* home section 3 style */
-.home_sec3 {
-  margin-bottom: 120px;
-}
+
 .home_sec3_text_box {
   position: absolute;
   padding-left: 20px;
@@ -580,9 +578,7 @@ div#mobileMenu {
   }
 }
 @media (max-width: 1250px) {
-  .home_sec3 {
-    margin-bottom: 80px;
-  }
+
   .home_sec3_dots_wrapper {
     bottom: 60px;
   }
@@ -606,9 +602,7 @@ div#mobileMenu {
   }
 }
 @media (max-width: 1024px) {
-  .home_sec3 {
-    margin-bottom: 60px;
-  }
+
   .home_sec3_dots li {
     display: none; /* Hide all dots */
   }
