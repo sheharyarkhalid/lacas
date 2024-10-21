@@ -1,10 +1,15 @@
 $(document).ready(function () {
+  $(".header_search_btn").click(function(){
+    $(".search_input").toggleClass("active");
+    $(".search_input[type='text']").focus();
+  });
+
   $(".home7_slider").on(
     "init afterChange",
     function (event, slick, currentSlide) {
       // Get the current slide index (if init is fired, use 0 as default)
       var slideIndex = currentSlide !== undefined ? currentSlide : 0;
-      console.log("slide", slideIndex);
+     // console.log("slide", slideIndex);
       // Get the current slide element
       var currentSlideElement = $(".home7_slider .home7_single_list").eq(
         slideIndex
@@ -160,3 +165,23 @@ $(document).ready(function () {
     ],
   });
 });
+
+ // use a script tag or an external JS file
+ document.addEventListener("DOMContentLoaded", (event) => {
+  gsap.registerPlugin(Flip,ScrollTrigger,Observer,ScrollToPlugin,Draggable,MotionPathPlugin,TextPlugin,SlowMo);
+  // gsap code here!
+  gsap.to(".scroll-image", {
+    y: -100, // Moves image up by 100px
+    duration: 1, // Slower duration for smooth effect
+    repeat: -1, // Infinite loop
+    yoyo: true, // Moves back down after going up
+    ease: "none", // Linear movement for smoothness
+    scrollTrigger: {
+      trigger: ".scroll-image",
+      start: "top bottom", // Starts when image enters viewport
+      end: "bottom top",   // Ends when image exits viewport
+      scrub: 1, // Sync animation with scroll, making it smooth
+    }
+  });
+
+ });

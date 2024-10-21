@@ -51,12 +51,37 @@
 
     <script type="text/javascript" src="js/slick.min.js"></script>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Observer.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/MotionPathPlugin.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+
+    <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/EasePack.min.js"></script>
     <!-- custom JS -->
     <script src="script.js"></script>
 
   </head>
 
   <body>
+
     <header class="desk_header d-block">
       <div class="custom_container">
         <div class="d-flex align-items-center justify-content-between w-100">
@@ -65,20 +90,29 @@
               class="object-fit-cover w-100" alt="Logo" />
           </a>
           <div class="header_listing d-lg-flex d-none align-items-center">
-            <a>home</a>
+            <a class="active">home</a>
             <a>about us</a>
-            <a data-bs-toggle="modal" data-bs-target="#CampusesMenu">campuses <i class="fas fa-angle-down"></i></a>
+            <a data-bs-toggle="modal" data-bs-target="#CampusesMenu">campuses <i
+                class="fas fa-angle-down"></i></a>
             <a>Alumni portal</a>
-            <a data-bs-toggle="modal" data-bs-target="#AcademicsMenu">Academics <i class="fas fa-angle-down"></i></a>
+            <a data-bs-toggle="modal" data-bs-target="#AcademicsMenu">Academics
+              <i class="fas fa-angle-down"></i></a>
             <a>contact</a>
           </div>
           <div class="header_btns d-lg-flex d-none align-items-center">
-            <a><i class="fal fa-search"></i></a>
+            <a class="header_search_bar position-relative">
+              <i class="fal fa-search header_search_btn"></i>
+              <form class="header_search_form">
+                <input type="text" class="search_input"
+                  placeholder="search here">
+              </form>
+            </a>
             <a class="header_login_btn">Login</a>
           </div>
 
           <a class="header_toggle_btn d-lg-none d-flex"
-          data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+            data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+            aria-controls="mobileMenu">
             <i class="fal fa-bars"></i></a>
         </div>
       </div>
@@ -227,7 +261,8 @@
       </div>
     </section>
 
-    <section class="home_sec3 d-inline-block w-100 position-relative float-start">
+    <section
+      class="home_sec3 d-inline-block w-100 position-relative float-start">
 
       <div class="home_sec3_slider overflow-hidden m-0">
         <div class="home_sec3_slide m-0">
@@ -380,6 +415,7 @@
     <section class="home_sec4 d-inline-block w-100 float-start">
       <div class="home4_grid d-grid w-100">
         <figure class="w-100 h-100 position-relative m-0 overflow-hidden">
+          <div class="home4_hover_color_layer"></div>
           <img class="w-100 h-100 object-fit-cover home4_img"
             src="images/Property 1=Default.png">
           <figcaption class="position-absolute w-100">
@@ -395,6 +431,7 @@
           </figcaption>
         </figure>
         <figure class="w-100 h-100 position-relative m-0  overflow-hidden">
+          <div class="home4_hover_color_layer"></div>
           <img class="w-100 h-100 object-fit-cover home4_img"
             src="images/Property 1=Default (1).png">
           <figcaption class="position-absolute w-100">
@@ -412,6 +449,7 @@
           </figcaption>
         </figure>
         <figure class="w-100 h-100 position-relative m-0  overflow-hidden">
+          <div class="home4_hover_color_layer"></div>
           <img class="w-100 h-100 object-fit-cover home4_img"
             src="images/Property 1=Default (2).png">
           <figcaption class="position-absolute w-100">
@@ -429,6 +467,7 @@
           </figcaption>
         </figure>
         <figure class="w-100 h-100 position-relative m-0  overflow-hidden">
+          <div class="home4_hover_color_layer"></div>
           <img class="w-100 h-100 object-fit-cover home4_img"
             src="images/Property 1=Default (3).png ">
           <figcaption class="position-absolute w-100">
@@ -465,7 +504,8 @@
         <div class="home5_listing_main d-grid w-100 ">
           <div class="home5_single_list  d-grid w-100 align-items-center">
             <figure class="home5_list1 w-100 d-md-grid d-grid">
-              <img class="w-100 h-100 object-fit-cover" lazy="loading"
+              <img class="scroll-image w-100 h-100 object-fit-cover"
+                lazy="loading"
                 src="images/Mask group (17).png">
               <img class="home5_transform w-100 h-100 object-fit-cover"
                 lazy="loading"
@@ -1081,94 +1121,110 @@
       </section>
     </footer>
 
-<div class="modal fade" id="AcademicsMenu" tabindex="-1" aria-labelledby="AcademicsMenuLabel" aria-hidden="true">
-  <div class="modal-dialog modal-fullscreen-sm-down w-100 h-100 m-0 p-0">
-    <div class="modal-content border-0 h-100">
-      <div class="modal-body menu2_parent position-relative">
-        <div class="custom_container">
-          <div
-            class="menu2_header d-flex w-100 align-items-center justify-content-between">
-            <h5>Academics</h5>
-            <img src="images/logo.png" class="object-fit-cover w-100" alt="Logo">
-            <a class="d-flex align-items-center" data-bs-dismiss="modal" aria-label="Close"><span>Close</span> <i
-                class="fas fa-times"></i></a>
-          </div>
-          <div class="menu2_box d-flex flex-column align-items-center justify-content-center text-center w-100">
-           <div class="menu2_content d-flex flex-column align-items-center justify-content-center text-center">
-            <a>Reach</a>
-           </div>
-           <div class="menu2_content d-flex flex-column align-items-center justify-content-center text-center">
-            <a>Primary to Middle School</a>
-            <small>Grade 1 to 8</small>
-           </div>
-           <div class="menu2_content d-flex flex-column align-items-center justify-content-center text-center">
-            <a>O Level</a>
-            <small>Grade 9 to 11</small>
-           </div>
-           <div class="menu2_content d-flex flex-column align-items-center justify-content-center text-center">
-            <a>A Level</a>
-           </div>
-          </div>
-        
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+    <div class="modal fade" id="AcademicsMenu" tabindex="-1"
+      aria-labelledby="AcademicsMenuLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen-sm-down w-100 h-100 m-0 p-0">
+        <div class="modal-content border-0 h-100">
+          <div class="modal-body menu2_parent position-relative">
+            <div class="custom_container">
+              <div
+                class="menu2_header d-flex w-100 align-items-center justify-content-between">
+                <h5>Academics</h5>
+                <img src="images/logo.png" class="object-fit-cover w-100"
+                  alt="Logo">
+                <a class="d-flex align-items-center" data-bs-dismiss="modal"
+                  aria-label="Close"><span>Close</span> <i
+                    class="fas fa-times"></i></a>
+              </div>
+              <div
+                class="menu2_box d-flex flex-column align-items-center justify-content-center text-center w-100">
+                <div
+                  class="menu2_content d-flex flex-column align-items-center justify-content-center text-center">
+                  <a>Reach</a>
+                </div>
+                <div
+                  class="menu2_content d-flex flex-column align-items-center justify-content-center text-center">
+                  <a>Primary to Middle School</a>
+                  <small>Grade 1 to 8</small>
+                </div>
+                <div
+                  class="menu2_content d-flex flex-column align-items-center justify-content-center text-center">
+                  <a>O Level</a>
+                  <small>Grade 9 to 11</small>
+                </div>
+                <div
+                  class="menu2_content d-flex flex-column align-items-center justify-content-center text-center">
+                  <a>A Level</a>
+                </div>
+              </div>
 
-<div class="modal fade" id="CampusesMenu" tabindex="-1" aria-labelledby="CampusesMenuLabel" aria-hidden="true">
-  <div class="modal-dialog modal-fullscreen-sm-down w-100 h-100 m-0 p-0">
-    <div class="modal-content border-0 h-100">
-      <div class="modal-body menu1_parent position-relative">
-        <div class="custom_container">
-          <div
-            class="menu1_header d-flex w-100 align-items-center justify-content-between">
-            <h5>Campuses</h5>
-            <img src="images/logo.png" class="object-fit-cover w-100" alt="Logo">
-            <a class="d-flex align-items-center" data-bs-dismiss="modal" aria-label="Close"><span>Close</span> <i
-                class="fas fa-times"></i></a>
-          </div>
-          <div class="menu1_box d-grid w-100">
-           <a>LACAS Johar Town</a>
-           <a>LACAS Gulberg Senior</a>
-           <a>LACAS Burki</a>
-           <a>LACAS Gujranwala</a>
-           <a>LACAS Canal Side Campus</a>
-           <a>LACAS Islamabad</a>
-           <a>LACAS Gulberg Junior</a>
-          </div>
-          <div class="menu1_box2 d-flex flex-column w-100">
-            <h4>A Level Campuses</h4>
-            <div class="menu1_box2_listing d-grid w-100">
-              <a>LACAS Johar Town</a>
-              <a>LACAS Gulberg Senior</a>
-             </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
-
-<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
-  <div class="mobile_menu_header offcanvas-header position-relative align-items-center justify-content-center">
-    <a href="/" class="header_logo d-flex">
-      <img src="images/logo.png" class="object-fit-cover w-100" alt="Logo">
-    </a>
-    <button data-bs-dismiss="offcanvas" aria-label="Close"><i class="fas fa-times"></i></button>
-  </div>
-  <div class="offcanvas-body">
-    <div class="mobile_listing d-flex flex-column text-center align-items-center">
-      <a>home</a>
-      <a>about us</a>
-      <a data-bs-toggle="modal" data-bs-target="#CampusesMenu">campuses <i class="fas fa-angle-down"></i></a>
-      <a>Alumni portal</a>
-      <a data-bs-toggle="modal" data-bs-target="#AcademicsMenu">Academics <i class="fas fa-angle-down"></i></a>
-      <a>contact</a>
+    <div class="modal fade" id="CampusesMenu" tabindex="-1"
+      aria-labelledby="CampusesMenuLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen-sm-down w-100 h-100 m-0 p-0">
+        <div class="modal-content border-0 h-100">
+          <div class="modal-body menu1_parent position-relative">
+            <div class="custom_container">
+              <div
+                class="menu1_header d-flex w-100 align-items-center justify-content-between">
+                <h5>Campuses</h5>
+                <img src="images/logo.png" class="object-fit-cover w-100"
+                  alt="Logo">
+                <a class="d-flex align-items-center" data-bs-dismiss="modal"
+                  aria-label="Close"><span>Close</span> <i
+                    class="fas fa-times"></i></a>
+              </div>
+              <div class="menu1_box d-grid w-100">
+                <a>LACAS Johar Town</a>
+                <a>LACAS Gulberg Senior</a>
+                <a>LACAS Burki</a>
+                <a>LACAS Gujranwala</a>
+                <a>LACAS Canal Side Campus</a>
+                <a>LACAS Islamabad</a>
+                <a>LACAS Gulberg Junior</a>
+              </div>
+              <div class="menu1_box2 d-flex flex-column w-100">
+                <h4>A Level Campuses</h4>
+                <div class="menu1_box2_listing d-grid w-100">
+                  <a>LACAS Johar Town</a>
+                  <a>LACAS Gulberg Senior</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu"
+      aria-labelledby="mobileMenuLabel">
+      <div
+        class="mobile_menu_header offcanvas-header position-relative align-items-center justify-content-center">
+        <a href="/" class="header_logo d-flex">
+          <img src="images/logo.png" class="object-fit-cover w-100" alt="Logo">
+        </a>
+        <button data-bs-dismiss="offcanvas" aria-label="Close"><i
+            class="fas fa-times"></i></button>
+      </div>
+      <div class="offcanvas-body">
+        <div
+          class="mobile_listing d-flex flex-column text-center align-items-center">
+          <a class="active">home</a>
+          <a>about us</a>
+          <a data-bs-toggle="modal" data-bs-target="#CampusesMenu">campuses <i
+              class="fas fa-angle-down"></i></a>
+          <a>Alumni portal</a>
+          <a data-bs-toggle="modal" data-bs-target="#AcademicsMenu">Academics <i
+              class="fas fa-angle-down"></i></a>
+          <a>contact</a>
+        </div>
+      </div>
+    </div>
 
   </body>
 
