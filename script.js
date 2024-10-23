@@ -1,26 +1,36 @@
 $(document).ready(function () {
+ 
   $(".header_search_btn").click(function(){
     $(".search_input").toggleClass("active");
+    $(".header_search_btn").toggleClass("active");
     $(".search_input[type='text']").focus();
   });
 
   $(".home7_slider").on(
     "init afterChange",
     function (event, slick, currentSlide) {
-      // Get the current slide index (if init is fired, use 0 as default)
-      var slideIndex = currentSlide !== undefined ? currentSlide : 0;
-     // console.log("slide", slideIndex);
-      // Get the current slide element
-      var currentSlideElement = $(".home7_slider .home7_single_list").eq(
-        slideIndex
-      );
+        // Get the current slide index (default to 0 if currentSlide is undefined)
+    var currentSlideIndex = currentSlide !== undefined ? currentSlide : 0;
+    
+    // Get the total number of slides
+    var totalSlides = slick.slideCount;
+
+    // Calculate the previous slide index
+    // Wrap around to the last slide if the current slide is the first one
+    var prevSlideIndex = (currentSlideIndex - 2 + totalSlides) % totalSlides;
+
+    // Get the current slide element
+    var currentSlideElement = $(".home7_slider .home7_single_list").eq(currentSlideIndex);
+
+    // Get the previous slide element
+    var previousSlideElement = $(".home7_slider .home7_single_list").eq(prevSlideIndex);
 
       // Get data attributes from the current slide
-      var title = currentSlideElement.data("heading");
-      var detail1 = currentSlideElement.data("detail1");
-      var detail2 = currentSlideElement.data("detail2");
-      var imgSrc = currentSlideElement.find("img").attr("src");
-
+      var title = previousSlideElement.data("heading");
+      var detail1 = previousSlideElement.data("detail1");
+      var detail2 = previousSlideElement.data("detail2");
+      var imgSrc = previousSlideElement.find("img").attr("src");
+console.log('title',title);
       // Update the content of the separate box
       $(".home7_current_data .home7_current_title").text(title);
       $(".home7_current_data .home7_current_detail1").text(detail1);
@@ -169,19 +179,93 @@ $(document).ready(function () {
  // use a script tag or an external JS file
  document.addEventListener("DOMContentLoaded", (event) => {
   gsap.registerPlugin(Flip,ScrollTrigger,Observer,ScrollToPlugin,Draggable,MotionPathPlugin,TextPlugin,SlowMo);
-  // gsap code here!
-  gsap.to(".scroll-image", {
-    y: -100, // Moves image up by 100px
-    duration: 1, // Slower duration for smooth effect
-    repeat: -1, // Infinite loop
-    yoyo: true, // Moves back down after going up
-    ease: "none", // Linear movement for smoothness
+
+	const home5_first_anim = document.querySelector('.home5_first_anim');
+  const home5_first_anim_box = home5_first_anim.querySelectorAll('.home5_first_anim_box');
+  const home5_first_anim_single = home5_first_anim.querySelectorAll('.home5_first_anim_img');
+
+  let first = gsap.timeline({
+  	paused: true,
     scrollTrigger: {
-      trigger: ".scroll-image",
-      start: "top bottom", // Starts when image enters viewport
-      end: "bottom top",   // Ends when image exits viewport
-      scrub: 1, // Sync animation with scroll, making it smooth
+    	trigger: home5_first_anim,
+      start: 'top 90%',
+      end: 'bottom 10%',
+    	scrub: 0.5
     }
-  });
+  })
+  .from(home5_first_anim_box, {
+  	yPercent: "random(3, 10, 1)",
+  })
+  .from(home5_first_anim_single, {
+  	yPercent: (i)=> i ? 15 : -15
+  }, '<')
+  
+
+	const home5_sec_anim = document.querySelector('.home5_sec_anim');
+  const home5_sec_anim_box = home5_sec_anim.querySelectorAll('.home5_sec_anim_box');
+  const home5_sec_anim_single = home5_sec_anim.querySelectorAll('.home5_sec_anim_img');
+
+  let sec = gsap.timeline({
+  	paused: true,
+    scrollTrigger: {
+    	trigger: home5_sec_anim,
+      start: 'top 90%',
+      end: 'bottom 10%',
+    	scrub: 0.5
+    }
+  })
+  .from(home5_sec_anim_box, {
+  	yPercent: "random(3, 10, 1)",
+  })
+  .from(home5_sec_anim_single, {
+  	yPercent: (i)=> i ? 15 : -15
+  }, '<')
+
+
+
+
+	const home5_third_anim = document.querySelector('.home5_third_anim');
+  const home5_third_anim_box = home5_third_anim.querySelectorAll('.home5_third_anim_box');
+  const home5_third_anim_single = home5_third_anim.querySelectorAll('.home5_third_anim_img');
+
+  let third = gsap.timeline({
+  	paused: true,
+    scrollTrigger: {
+    	trigger: home5_third_anim,
+      start: 'top 90%',
+      end: 'bottom 10%',
+    	scrub: 0.5
+    }
+  })
+  .from(home5_third_anim_box, {
+  	yPercent: "random(3, 10, 1)",
+  })
+  .from(home5_third_anim_single, {
+  	yPercent: (i)=> i ? 15 : -15
+  }, '<')
+
+
+  const home5_fourth_anim = document.querySelector('.home5_fourth_anim');
+  const home5_fourth_anim_box = home5_fourth_anim.querySelectorAll('.home5_fourth_anim_box');
+  const home5_fourth_anim_single = home5_fourth_anim.querySelectorAll('.home5_fourth_anim_img');
+ 
+  let fourth = gsap.timeline({
+    paused: true,
+    scrollTrigger: {
+      trigger: home5_fourth_anim,
+      start: 'top 90%',
+      end: 'bottom 10%',
+      scrub: 0.5
+    }
+  })
+  .from(home5_fourth_anim_box, {
+    yPercent: "random(3, 10, 1)",
+  })
+  .from(home5_fourth_anim_single, {
+    yPercent: (i)=> i ? 15 : -15
+  }, '<')
+ 
 
  });
+
+

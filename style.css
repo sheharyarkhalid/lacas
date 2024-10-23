@@ -89,11 +89,24 @@ button:focus-visible {
   text-transform: uppercase;
   cursor: pointer;
   opacity: 0.75;
-  padding: 0px 10px 6px 10px;
+  padding: 0px 10px 0px 10px;
+  position: relative;
 }
-.header_listing a.active{
+.header_listing a::before{
+  position: absolute;
+  content: "";
+  left: 0px;
+  bottom: -6px;
+  height: 2px;
+  width: 100%;
+  background-color: #C0221F;
+  visibility: hidden;
+  opacity: 0;
+}
+.header_listing a.active::before{
+  visibility: visible;
   opacity: 1;
-  border-bottom: 2px solid #C0221F;
+
 }
 .header_listing a i {
   padding-left: 16px;
@@ -110,7 +123,16 @@ button:focus-visible {
   line-height: 24px;
   padding: 5px 31px;
   margin-left: 30px;
+  transition: 0.4s ease-in-out;
+  border: 1px solid #c0221f;
+  cursor: pointer;
+  height: 34px;
 }
+.header_login_btn:hover{
+  background: transparent;
+  border-color: #ffffff;
+}
+
 .header_toggle_btn i {
   color: #c0221f;
   font-size: 24px;
@@ -119,35 +141,41 @@ button:focus-visible {
 .header_btns a i {
   color: #FFFFFF;
   font-size: 18px;
+  position: relative;
+    z-index: 9;
 }
 .header_search_bar i{
   padding: 8px 0px;
   cursor: pointer;
 }
 .header_search_bar input{
-position: absolute;
-right: 26px;
-top: -1px;
-border: 0;
-background: #fff;
-outline: none;
-font-size: 15px;
-color: #000;
-transition: all 0.3s ease;
-padding:8px 0px;
-width: 0px;
-border-radius: 4px;
+  position: absolute;
+  right: -12px;
+  top: 0px;
+  border: 0;
+  background: rgba(0, 0, 0, 1);
+  outline: none;
+  font-size: 17px;
+  color: rgba(255, 255, 255, 50%);
+  transition: all 0.3s ease;
+  padding: 8px 0px;
+  width: 0px;
+  font-weight: 400 !important;
+  height: 34px;
 }
 
 .header_search_form input.active{
-width: 250px;
-transition: all 0.5s ease;
-padding: 8px 10px;
+  width: 219px;
+  transition: all 0.5s ease;
+  padding: 6px 38px 6px 12px;
+}
+.header_search_btn.active{
+  color: #c0221f;
+  transition: all 0.3s ease;
 }
 
-
 .header_search_bar input::placeholder {
-color: #000;
+  color: rgba(255,255,255,50%);
 }
 /* mobile menu css */
 div#mobileMenu {
@@ -916,6 +944,7 @@ display: flex;
   line-height: 30px;
   color: #c0221f;
   padding-bottom: 5px;
+text-transform: uppercase;
 }
 .home5_listing_content h3 {
   font-family: "Cormorant Garamond", serif;
@@ -2055,6 +2084,7 @@ font-weight: 400;
 line-height: 35px;
 color: #fff !important;
 cursor: pointer;  
+transition: 0.3s ease-in-out;
 }
 .menu1_header a span{
   text-decoration: underline;
@@ -2062,7 +2092,14 @@ cursor: pointer;
 .menu1_header a i{
   font-size: 16px;
   margin-left: 15px;
+  padding-top: 6px;
 }
+.menu1_header a:hover{
+  transition: 0.3s ease-in-out;
+  color: #C0221F !important;
+}
+
+
 .menu1_box{
   grid-template-columns: 1fr 1fr;
   gap: 45px 20px;
@@ -2073,8 +2110,18 @@ font-size: 36px;
 font-weight: 700;
 line-height: 46px;
 font-family: "Cormorant Garamond", serif;
-color: #fff !important;
+cursor: pointer;
 }
+.menu1_box a span{
+  color: #fff !important;
+  transition: 0.3s ease-in-out;
+}
+.menu1_box a span:hover{
+  color: #C0221F !important;
+  transition: 0.3s ease-in-out;
+  font-size: 56px;
+}
+
 
 .menu1_box2 h4{
   font-family: "Cormorant Garamond", serif;
@@ -2094,6 +2141,16 @@ font-weight: 700;
 line-height: 46px;
 font-family: "Cormorant Garamond", serif;
 color: #fff !important;
+cursor: pointer;
+}
+.menu1_box2_listing a span{
+  color: #fff !important;
+  transition: 0.3s ease-in-out;
+}
+.menu1_box2_listing a span:hover{
+  color: #C0221F !important;
+  transition: 0.3s ease-in-out;
+  font-size: 56px;
 }
 
 @media(max-width:1250px){
@@ -2119,6 +2176,9 @@ color: #fff !important;
   font-size: 28px;
   line-height: 40px;
 }
+.menu1_box a span:hover{
+  font-size: 38px;
+}
 .menu1_box {
   gap: 30px 20px;
   margin-bottom: 100px;
@@ -2132,6 +2192,9 @@ color: #fff !important;
 .menu1_box2_listing a {
   font-size: 28px;
   line-height: 40px;
+}
+.menu1_box2_listing a span:hover{
+  font-size: 38px;
 }
 .menu1_box2_listing {
   gap: 30px 20px;
@@ -2154,6 +2217,9 @@ color: #fff !important;
   font-size: 18px;
   line-height: 30px;
 }
+.menu1_box a span:hover {
+  font-size: 25px;
+}
 .menu1_box {
   gap: 20px 20px;
   margin-bottom: 60px;
@@ -2173,6 +2239,9 @@ color: #fff !important;
 .menu1_box2_listing a {
   font-size: 18px;
   line-height: 30px;
+}
+.menu1_box2_listing a span:hover {
+  font-size: 30px;
 }
 .menu1_header a {
       position: absolute;
@@ -2230,6 +2299,7 @@ font-weight: 400;
 line-height: 35px;
 color: #fff !important;
 cursor: pointer;  
+transition: 0.3s ease-in-out;
 }
   .menu2_header a span{
     text-decoration: underline;
@@ -2237,12 +2307,17 @@ cursor: pointer;
   .menu2_header a i{
     font-size: 16px;
     margin-left: 15px;
+    padding-top: 6px;
+  }
+  .menu2_header a:hover{
+    transition: 0.3s ease-in-out;
+    color: #C0221F !important;
   }
   .menu2_content{
-    padding-bottom: 90px;
+    margin-bottom: 90px;
   }
   .menu2_content:last-child{
-    padding-bottom: 0px;
+    margin-bottom: 0px;
   }
   .menu2_content a{
 font-size: 36px;
@@ -2250,6 +2325,7 @@ font-weight: 700;
 line-height: 46px;
 font-family: "Cormorant Garamond", serif;
   color: #fff !important;
+  transition: 0.3s ease-in-out;
   }
   .menu2_content small{
     padding-top: 15px;
@@ -2257,8 +2333,17 @@ font-size: 18px;
 font-weight: 400;
 line-height: 24px;
   color: #C0221F !important;
+  transition: 0.3s ease-in-out;
   }
-
+  .menu2_content:hover a{
+    color: #C0221F !important;
+    transition: 0.3s ease-in-out;
+    font-size: 56px;
+  }
+  .menu2_content:hover small{
+    transform: translatex(-58px);
+    transition: 0.3s ease-in-out;
+  }
  
 
 @media(max-width:1250px){
@@ -2284,8 +2369,14 @@ line-height: 24px;
     font-size: 28px;
     line-height: 40px;
 }
+.menu2_content:hover a{
+  font-size: 38px;
+}
+.menu2_content:hover small{
+  transform: translatex(-38px);
+}
 .menu2_content {
-    padding-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 }
@@ -2306,7 +2397,9 @@ line-height: 24px;
   font-size: 21px;
   line-height: 30px;
   }
-
+  .menu2_content:hover a{
+    font-size: 26px;
+  }
   .menu2_header {
         margin-bottom: 60px;
     }
@@ -2321,7 +2414,7 @@ line-height: 24px;
         margin-right: 0px;
     }
     .menu2_content {
-    padding-bottom: 40px;
+      margin-bottom: 40px;
 }
 .menu2_content small {
     padding-top: 12px;
