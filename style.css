@@ -495,7 +495,7 @@ div#mobileMenu {
   gap: 30px 30px;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1300px) {
   .home_sec2 {
     margin-bottom: 80px;
   }
@@ -836,7 +836,7 @@ margin-top: 15px;
  height: 100%;
 } */
 .home4_grid figure:hover figcaption {
-  bottom: 18%;
+  bottom: 0%;
   top: 50%;
   transform: translate(0%, -50%);
   transition: 0.4s ease-in-out;
@@ -884,12 +884,22 @@ display: flex;
     margin-bottom: 80px;
   }
   .home4_content h3 {
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 26px;
+    line-height: 33px;
   }
   .home4_grid figure figcaption {
-    padding: 10px 30px 36px 30px;
+    padding: 10px 20px 36px 20px;
   }
+  .home4_content p {
+    font-size: 14px;
+    line-height: 21px;
+}
+.home4_content a {
+  margin-top: 20px;
+}
+.home4_content img {
+  max-width: 110px;
+}
 }
 @media (max-width: 1024px) {
   .home_sec4 {
@@ -930,6 +940,9 @@ display: flex;
 }
 .home4_hover_color_layer{
   visibility: visible !important;
+}
+.home4_grid figure > img {
+  height: 525px !important;
 }
 }
 

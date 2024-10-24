@@ -106,7 +106,7 @@ console.log('title',title);
     pauseOnFocus: false,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 5000,
     arrows: false,
     dots: true,
@@ -238,11 +238,11 @@ console.log('title',title);
     	trigger: home5_first_anim,
       start: 'top 90%',
       end: 'bottom 10%',
-    	scrub: 0.5
+    	scrub: 1
     }
   })
   .from(home5_first_anim_box, {
-  	yPercent: "random(3, 10, 1)",
+  	yPercent: "random(10, 30, 1)",
   })
   .from(home5_first_anim_single, {
   	yPercent: (i)=> i ? 15 : -15
@@ -259,7 +259,7 @@ console.log('title',title);
     	trigger: home5_sec_anim,
       start: 'top 90%',
       end: 'bottom 10%',
-    	scrub: 0.5
+    	scrub: 1
     }
   })
   .from(home5_sec_anim_box, {
@@ -282,7 +282,7 @@ console.log('title',title);
     	trigger: home5_third_anim,
       start: 'top 90%',
       end: 'bottom 10%',
-    	scrub: 0.5
+    	scrub: 1
     }
   })
   .from(home5_third_anim_box, {
@@ -303,7 +303,7 @@ console.log('title',title);
       trigger: home5_fourth_anim,
       start: 'top 90%',
       end: 'bottom 10%',
-      scrub: 0.5
+      scrub: 1
     }
   })
   .from(home5_fourth_anim_box, {
