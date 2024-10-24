@@ -357,15 +357,22 @@ div#mobileMenu {
   padding-bottom: 100px;
 }
 }
-@media (max-width: 1250px) {
+@media (max-width: 1300px) {
+  .home_banner_container {
+    max-width: 795px;
+}
+.home_banner_content h2 {
+  font-size: 48px;
+  line-height: 55px;
+}
   .home_banner {
     margin-bottom: 80px;
   }
   .home_banner_text_box {
-    padding-bottom: 60px;
+    padding-bottom: 120px;
   }
   .home_banner_dots_wrapper {
-    bottom:24%;
+    bottom:35%;
   }
 }
 @media (max-width: 1024px) {
