@@ -417,7 +417,7 @@ div#mobileMenu {
     padding-bottom: 9px;
   }
   .home_banner_text_box {
-    padding-bottom: 0px;
+    padding-bottom: 40px;
   }
   .home_banner_dots_wrapper {
     bottom:20%;
@@ -449,7 +449,7 @@ div#mobileMenu {
     width: 263px;
   }
   .home_banner_dots_wrapper {
-    bottom:20%;
+    bottom:22%;
   }
 }
 
