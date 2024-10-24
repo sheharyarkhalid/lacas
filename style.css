@@ -407,7 +407,7 @@ div#mobileMenu {
 }
 @media (max-width: 767px) {
   .home_banner_slide figure img {
-    height: 800px !important;
+    height: 700px !important;
   }
   .home_banner_content h2 {
     font-size: 32px;
