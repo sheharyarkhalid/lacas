@@ -78,7 +78,7 @@ console.log('title',title);
     pauseOnFocus: false,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 5000,
     arrows: false,
     dots: true,
@@ -218,6 +218,64 @@ console.log('title',title);
           slidesToScroll: 1,
           centerMode: true,
           centerPadding: "40px",
+        },
+      },
+    ],
+  });
+
+  $(".about1_slider").slick({
+    slidesToShow:3,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    dots: false,
+   arrows: true,
+   appendArrows: $('.about_sec2_arrow'),
+   nextArrow: '<a class="about1_arrow"><i class="fal fa-arrow-right"></i></a>',
+   prevArrow: '<a class="about1_arrow"><i class="fal fa-arrow-left"></i></a>',
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow:2,
+          slidesToScroll: 1,
+          autoplay: false,
+          autoplaySpeed: 1500,
+          dots: false,
+          arrows: true,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          autoplay: false,
+          autoplaySpeed: 1500,
+               dots: false,
+            arrows: true,
+        },
+      },
+      {
+        breakpoint: 540,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: false,
+          autoplaySpeed: 1500,
+              dots: false,
+          arrows: true,
+        },
+      },
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: false,
+        autoplaySpeed: 1500,
+               dots: false,
+           arrows: true,
         },
       },
     ],
