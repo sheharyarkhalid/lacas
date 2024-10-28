@@ -175,111 +175,165 @@ console.log('title',title);
     ],
   });
 
-  $(".about2_slider").slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    dots: false,
-    arrows: false,
+  // $(".about2_slider").slick({
+  //   slidesToShow: 3,
+  //   slidesToScroll: 1,
+  //   autoplay: true,
+  //   autoplaySpeed: 2000,
+  //   dots: false,
+  //   arrows: false,
 
+  //   responsive: [
+  //     {
+  //       breakpoint: 1024,
+  //       settings: {
+  //         slidesToShow: 3,
+  //         slidesToScroll: 1,
+  //         centerMode: true,
+  //         centerPadding: "40px",
+  //       },
+  //     },
+  //     {
+  //       breakpoint: 767,
+  //       settings: {
+  //         slidesToShow: 2,
+  //         slidesToScroll: 1,
+  //         centerMode: true,
+  //         centerPadding: "40px",
+  //       },
+  //     },
+  //     {
+  //       breakpoint: 540,
+  //       settings: {
+  //         slidesToShow: 1,
+  //         slidesToScroll: 1,
+  //         centerMode: true,
+  //         centerPadding: "40px",
+  //       },
+  //     },
+  //     {
+  //       breakpoint: 400,
+  //       settings: {
+  //         slidesToShow: 1,
+  //         slidesToScroll: 1,
+  //         centerMode: true,
+  //         centerPadding: "40px",
+  //       },
+  //     },
+  //   ],
+  // });
+
+   $(".about2_slider").slick({
+     slidesToShow:3,
+     slidesToScroll: 1,
+     autoplay: false,
+     autoplaySpeed: 2000,
+     dots: false,
+    arrows: true,
+    appendArrows: $('.about_sec2_arrow'),
+    nextArrow: '<a class="about1_arrow"><i class="fal fa-arrow-right"></i></a>',
+    prevArrow: '<a class="about1_arrow"><i class="fal fa-arrow-left"></i></a>',
+     responsive: [
+       {
+         breakpoint: 1024,
+         settings: {
+           slidesToShow:2,
+           slidesToScroll: 1,
+           autoplay: false,
+           autoplaySpeed: 1500,
+           dots: false,
+           arrows: true,
+         },
+       },
+       {
+         breakpoint: 767,
+         settings: {
+           slidesToShow: 2,
+           slidesToScroll: 1,
+           autoplay: false,
+           autoplaySpeed: 1500,
+                dots: false,
+             arrows: true,
+         },
+       },
+       {
+         breakpoint: 540,
+         settings: {
+           slidesToShow: 1,
+           slidesToScroll: 1,
+           autoplay: false,
+           autoplaySpeed: 1500,
+               dots: false,
+           arrows: true,
+         },
+       },
+       {
+         breakpoint: 400,
+         settings: {
+           slidesToShow: 1,
+           slidesToScroll: 1,
+           autoplay: false,
+         autoplaySpeed: 1500,
+                dots: false,
+            arrows: true,
+         },
+       },
+     ],
+   });
+
+
+  $(".about6_slider").slick({
+    slidesToShow: 3,
+    arrows: false,
+    dots: false,
+    slidesToScroll: 1,
+    autoplay:false,
+    autoplaySpeed:1000,
+   centerMode: true,
+    centerPadding: "160px",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 540,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
+
+  $(".about7_slider").slick({
+    slidesToShow: 4,
+    arrows: false,
+    dots: false,
+    slidesToScroll: 1,
+    autoplay:true,
+    autoplaySpeed:1000,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          centerMode: true,
-          centerPadding: "40px",
-        },
-      },
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          centerMode: true,
-          centerPadding: "40px",
         },
       },
       {
         breakpoint: 540,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
-          centerMode: true,
-          centerPadding: "40px",
-        },
-      },
-      {
-        breakpoint: 400,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          centerMode: true,
-          centerPadding: "40px",
         },
       },
     ],
   });
 
-  $(".about1_slider").slick({
-    slidesToShow:3,
-    slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 2000,
-    dots: false,
-   arrows: true,
-   appendArrows: $('.about_sec2_arrow'),
-   nextArrow: '<a class="about1_arrow"><i class="fal fa-arrow-right"></i></a>',
-   prevArrow: '<a class="about1_arrow"><i class="fal fa-arrow-left"></i></a>',
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow:2,
-          slidesToScroll: 1,
-          autoplay: false,
-          autoplaySpeed: 1500,
-          dots: false,
-          arrows: true,
-        },
-      },
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          autoplay: false,
-          autoplaySpeed: 1500,
-               dots: false,
-            arrows: true,
-        },
-      },
-      {
-        breakpoint: 540,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          autoplay: false,
-          autoplaySpeed: 1500,
-              dots: false,
-          arrows: true,
-        },
-      },
-      {
-        breakpoint: 400,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          autoplay: false,
-        autoplaySpeed: 1500,
-               dots: false,
-           arrows: true,
-        },
-      },
-    ],
-  });
 });
 
  // use a script tag or an external JS file
