@@ -2489,6 +2489,11 @@ div#AcademicsMenu .modal-fullscreen-sm-down .modal-content {
   color: #c0221f;
   font-size: 21px;
 }
+.contact_social_links a img{
+width: 26px;
+height: 26px;
+object-fit: cover;
+}
 .contact_sec1_parent form {
   background: rgba(0, 0, 0, 5%);
   padding: 30px 48px;
