@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta charset="utf-8" />
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+
+        <title>OBW Website</title>
+
+        <!-- fontawsome CSS -->
+        <link rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+            integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+            crossorigin="anonymous" />
+        <link rel="stylesheet"
+            href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css"
+            crossorigin="anonymous" />
+
+        <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55"
+            rel="stylesheet">
+
+        <!--google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+            rel="stylesheet">
+
+        <!-- Bootstrap 5 CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous">
+
+        <!-- jQuery JS -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <!-- Bootstrap 5 JS -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+
+        <link rel=stylesheet type=text/css href="css/slick.css" />
+
+        <!-- custom CSS -->
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="css/primary-to-middle.css" />
+
+        <script type="text/javascript" src="js/slick.min.js"></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Observer.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/MotionPathPlugin.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+
+        <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/EasePack.min.js"></script>
+        <!-- custom JS -->
+        <script src="script.js"></script>
+
+    </head>
+
+    <body>
+
+        <header class="desk_header d-block">
+            <div class="custom_container">
+                <div
+                    class="d-flex align-items-center justify-content-between w-100">
+                    <a href="/" class="header_logo d-flex">
+                        <img src="images/logo.png"
+                            class="object-fit-cover w-100" alt="Logo" />
+                    </a>
+                    <div
+                        class="header_listing d-lg-flex d-none align-items-center">
+                        <a class="active">home</a>
+                        <a>about us</a>
+                        <a data-bs-toggle="modal"
+                            data-bs-target="#CampusesMenu">campuses <i
+                                class="fas fa-angle-down"></i></a>
+                        <a>Alumni portal</a>
+                        <a data-bs-toggle="modal"
+                            data-bs-target="#AcademicsMenu">Academics
+                            <i class="fas fa-angle-down"></i></a>
+                        <a>contact</a>
+                    </div>
+                    <div
+                        class="header_btns d-lg-flex d-none align-items-center">
+                        <a class="header_search_bar position-relative">
+                            <i class="fal fa-search header_search_btn"></i>
+                            <form class="header_search_form">
+                                <input type="text" class="search_input"
+                                    placeholder="Search here">
+                            </form>
+                        </a>
+                        <a class="header_login_btn">Login</a>
+                    </div>
+
+                    <a class="header_toggle_btn d-lg-none d-flex"
+                        data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+                        aria-controls="mobileMenu">
+                        <i class="fal fa-bars"></i></a>
+                </div>
+            </div>
+        </header>
+
+      
+
+
+        <section
+            class="primary_sec1 d-inline-block float-start w-100 float-start">
+            <div class="custom_container">
+                <div class="primary1_box d-grid w-100">
+                    <div class="primary1_des1 w-100 h-100 d-flex flex-column">
+                        <h2>Primary<br />
+                            To<br />
+                            Middle School</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. </p>
+
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. </p>
+
+                        <p>Excepteur sint occaecat cupidatat non proident, sunt
+                            in culpa qui officia deserunt mollit anim id est
+                            laborum.</p>
+
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. </p>
+                    </div>
+                    <div class="primary1_des2 w-100 h-100">
+                        <img class="w-100 h-100 object-fit-cover"
+                            src="images/IMG_0066 1.png">
+                    </div>
+                    <div class="primary1_des3 w-100 h-100 d-grid">
+                      
+                        <div class="primary1_des3_fig position-relative">
+                            <img class="w-100 h-100 object-fit-cover"
+                                src="images/Mask group (46).png">
+                              <figcaption class="position-absolute w-100 h-100 d-flex align-items-center justify-content-end text-center flex-column">
+                                <h4>Grooming with
+                                    education</h4>
+                                    <a>Apply now</a>
+                                    </figcaption>
+                        </div>
+                       
+                        <div class="primary1_des3_data d-grid w-100">
+                            <img class="w-100 h-100 object-fit-cover"
+                                src="images/Mask group (47).png">
+                            <h3 class="text-center d-flex align-items-center justify-content-center">Grade<br />
+                                1 to 8</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    
+        <section class="primary_sec2 d-inline-block float-start w-100 float-start">
+            <div class="custom_container">
+                <div class="primary2_content d-flex flex-column w-100 align-items-center justify-content-center text-center">
+                    <h2>Curriculum</h2>
+                    <img class="w-100 h-100 object-fit-cover" src="images/Mask group (48).png">
+                    <p>
+                        The Reach curriculum is uniquely designed to meet the 
+                        developmental milestones of young children, combining play-based activities
+                         with structured learning. This approach supports cognitive, social, and emotional growth. The curriculum encompasses key areas such as language acquisition, early numeracy, physical development, and the arts. By emphasizing hands-on, experiential learning, we help children to engage deeply with their environment and build a robust foundation for their future education, setting them up for success in their subsequent academic pursuits.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+      
+        <section class="primary_sec3 d-inline-block float-start w-100 float-start">
+            <div class="custom_container">
+                <div class="primary3_box d-grid w-100 align-items-center">
+                    <div class="primary3_content d-flex w-100 flex-column">
+                        <h3>LACAS Primary to
+                            Middle School Program</h3>
+                            <p>Your child should have it. Apply today!</p>
+                    </div>
+                    
+                    <figure class="align-items-center justify-content-center d-flex"><img class="w-100 h-100 object-fit-cover" src="images/Layer_1 (4).png"></figure>
+                   <div class="primary3_btn d-flex justify-content-end"> <a>Apply now</a></div>
+                </div>
+            </div>
+        </section>
+
+
+   
+       
+       <section class="primary_sec4 d-inline-block float-start w-100 float-start">
+           <div class="custom_container">
+               <div class="primary4_content d-flex flex-column w-100 align-items-center justify-content-center text-center">
+                   <h2>LACAS Innovation Hub</h2>
+                   <p>
+                    Our school proudly offers a dynamic range of active teaching and learning methodologies designed to engage students in hands-on, participatory learning experiences. By incorporating project-based learning, collaborative group work, and interactive technology, we ensure that each student is not only absorbing information but also applying their knowledge in practical, real-world scenarios.
+                   </p>
+               </div>
+           </div>
+       </section>
+
+
+       <section class="primary_sec5 d-inline-block w-100">
+        <div class="custom_container">
+         
+  
+          <div class="primary5_listing_main d-grid w-100 ">
+            <div class="primary5_list primary5_reverse d-grid w-100 align-items-center">
+              <div class="primary5_list_content d-flex flex-column">
+                <small>steam lab</small>
+                <h3>Transforming Learning with 
+                    Technology at LACAS</h3>
+               
+              
+                  <p> At LACAS, we have revolutionized the learning environment through the integration of technology by developing EyeRIS labs equipped with modern and effective online tools and manipulatives. </p>
+
+ <p>Our EyeRIS labs stimulate learning by integrating technology into the classroom. These labs offer a differentiated learning environment tailored to accommodate the diverse learning capacities and needs of our students.</p>
+                 
+                </div>
+                <figure class="w-100 h-100">
+                    <img class="w-100 h-100 object-fit-cover"
+                      lazy="loading"
+                      src="images/Mask group (19).png">
+                  </figure>
+              </div>
+             
+              <div class="primary5_list d-grid w-100 align-items-center">
+                <figure class="w-100 h-100">
+                    <img class="w-100 h-100 object-fit-cover"
+                      lazy="loading"
+                      src="images/Mask group (18).png">
+                  </figure>
+                <div class="primary5_list_content d-flex flex-column">
+                    <small>steam lab</small>
+                    <h3>Transforming Learning with 
+                        Technology at LACAS</h3>
+                   
+                  
+                      <p> At LACAS, we have revolutionized the learning environment through the integration of technology by developing EyeRIS labs equipped with modern and effective online tools and manipulatives. </p>
+    
+     <p>Our EyeRIS labs stimulate learning by integrating technology into the classroom. These labs offer a differentiated learning environment tailored to accommodate the diverse learning capacities and needs of our students.</p>
+                </div>
+               
+              </div>
+
+              <div class="primary5_list primary5_reverse d-grid w-100 align-items-center">
+                <div class="primary5_list_content d-flex flex-column">
+                    <small>steam lab</small>
+                    <h3>Transforming Learning with 
+                        Technology at LACAS</h3>
+                   
+                  
+                      <p> At LACAS, we have revolutionized the learning environment through the integration of technology by developing EyeRIS labs equipped with modern and effective online tools and manipulatives. </p>
+    
+     <p>Our EyeRIS labs stimulate learning by integrating technology into the classroom. These labs offer a differentiated learning environment tailored to accommodate the diverse learning capacities and needs of our students.</p>
+                </div>
+                <figure class="w-100 h-100">
+                  <img class="w-100 h-100 object-fit-cover"
+                    lazy="loading"
+                    src="images/Mask group (19).png">
+                </figure>
+              </div>
+            </div>
+  
+          
+  
+          </div>
+  
+        </div>
+      </section>
+
+      <section
+      class="primary_sec6 d-inline-block float-start w-100 float-start">
+      <div class="custom_container">
+        <div class="primary6_header d-flex flex-column text-center w-100 align-items-center justify-content-center">
+            <h2>Extracurricular Activities</h2>
+            <p>Extracurricular activities are integral to the holistic development 
+                approach of the Reach program. We offer a diverse array of activities such 
+                as arts and crafts, music and storytelling, which are designed to spark
+                 creativity and encourage self-expression. These activities not only provide 
+                 a break from traditional learning but also help children develop essential 
+                 social skills, confidence, and teamwork. By participating in
+                  extracurricular activities, children can discover new interests and talents 
+                  in a supportive and enriching environment.</p>
+        </div>
+          <div class="primary6_box d-grid">
+              <div class="primary6_des1 w-100 h-100 d-flex flex-column">
+                <figure class="d-grid w-100 h-100">
+                    <img class="w-100 h-100 object-fit-cover" src="images/Mask group (49).png">
+                    <img class="w-100 h-100 object-fit-cover" src="images/Mask group (50).png">
+                </figure>
+                  <h2>Sharpening your children
+                    in their middle age to prepare them for the upcoming challenges</h2>
+              </div>
+              <div class="primary6_des2 w-100 h-100">
+                  <img class="w-100 h-100 object-fit-cover"
+                      src="images/Mask group (51).png">
+              </div>
+              <div class="primary6_des3 w-100 h-100 d-grid">
+                
+                  <div class="primary6_des3_fig w-100 d-flex position-relative">
+                    
+                          <h4 class="d-flex align-items-center">Preparing for<br>
+                            future</h4>
+                           
+                  </div>
+                 
+                  <div class="primary6_des3_data d-grid w-100">
+                      <img class="w-100 h-100 object-fit-cover"
+                          src="images/Mask group (52).png">
+                          <img class="w-100 h-100 object-fit-cover"
+                          src="images/Mask group (53).png">
+                        
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+   
+   <section class="primary_sec7 d-inline-block float-start w-100 float-start">
+       <div class="custom_container">
+           <div class="primary7_content d-flex flex-column w-100 align-items-center justify-content-center text-center">
+               <h2>Sports & Plays</h2>
+               <img class="w-100 h-100 object-fit-cover" src="images/Mask group (48).png">
+               <p>
+                Physical activity is a cornerstone of the Reach program, promoting overall health and development. Our well-equipped play areas and structured sports activities ensure that children remain active and engaged. Through organized play and sports, children enhance their physical fitness, motor skills, and teamwork abilities. We believe in the power of play as a fundamental aspect of learning, helping children to build resilience, solve problems, and interact positively with their peers. Our staff ensures that all activities are conducted safely and enjoyably, fostering a love for active living from an early age.
+               </p>
+           </div>
+       </div>
+   </section>
+
+        <footer class="footer_parent d-flex flex-column w-100">
+            <section class="newsletter_section d-inline-block w-100">
+                <div class="custom_container">
+                    <div
+                        class="newsletter_box d-grid w-100 align-items-center">
+                        <div class="newsletter_content d-flex flex-column">
+                            <h3>NEWSLETTER</h3>
+                            <p> Subscribe for our updates and news </p>
+                        </div>
+                        <form>
+                            <div
+                                class="newsletter_fields d-flex flex-column position-relative">
+                                <i class="far fa-envelope"></i>
+                                <input type="email" name="email"
+                                    placeholder="Enter your email here" />
+                                <button class="submitted btn"> Submit
+                                </button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </section>
+            <section class="footer_section d-inline-block w-100">
+                <div class="custom_container">
+                    <div
+                        class="footer_header d-flex flex-column w-100 align-items-center justify-content-center text-center">
+                        <figure class="m-0"><img
+                                class="w-100 h-100 object-fit-cover"
+                                src="images/footerlogo.png"></figure>
+                        <p>LACAS School Network is dedicated to fostering
+                            academic
+                            excellence,
+                            creativity, and personal growth in every
+                            student.
+                            With a
+                            commitment
+                            to innovation and holistic development, we
+                            empower
+                            young minds
+                            to
+                            excel in academics, sports, and extracurricular
+                            pursuits,
+                            preparing
+                            them for success in a rapidly evolving world.
+                            Our
+                            legacy of over
+                            three decades continues to shape future leaders
+                            who
+                            are
+                            confident,
+                            compassionate, and ready to make a
+                            difference.</p>
+                    </div>
+                    <div class="footer_content_parent d-grid w-100">
+                        <div class="footer_content d-grid w-100">
+
+                            <div class="footer_content_box">
+
+                                <div
+                                    class="footer_listing_header position-relative">
+                                    <h3>Site Links</h3>
+                                </div>
+                                <div>
+                                    <ul
+                                        class="footer_listing d-flex flex-column w-100">
+                                        <li><a>Home</a></li>
+                                        <li><a>About</a></li>
+                                        <li><a>Campuses</a></li>
+                                        <li><a>Academics</a></li>
+                                        <li><a>Find LACAS</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="footer_content_box">
+
+                                <div
+                                    class="footer_listing_header position-relative">
+                                    <h3>Quick links</h3>
+                                </div>
+                                <div>
+                                    <ul
+                                        class="footer_listing d-flex flex-column w-100">
+                                        <li><a>Newsletter</a></li>
+                                        <li><a>Bulletin Board</a></li>
+                                        <li><a>Prospectus</a></li>
+                                        <li><a>Career</a></li>
+                                        <li><a>Fee Bills</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="footer_content_box">
+
+                                <div
+                                    class="footer_listing_header position-relative">
+                                    <h3>Academics</h3>
+                                </div>
+                                <div>
+                                    <ul
+                                        class="footer_listing d-flex flex-column w-100">
+                                        <li><a>LACAS Portal</a></li>
+                                        <li><a>School Policies</a></li>
+                                        <li><a>Events Calendar</a></li>
+                                        <li><a>Academic Calendar</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="footer_content_box">
+
+                                <div
+                                    class="footer_listing_header position-relative">
+                                    <h3>Connect with us</h3>
+                                </div>
+                                <div>
+                                    <ul
+                                        class="footer_listing d-flex flex-column w-100">
+                                        <li><a>Facebook</a></li>
+                                        <li><a>Instagram</a></li>
+                                        <li><a>Linkedin</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="footer_content_box">
+
+                            <div
+                                class="footer_listing_header position-relative text-center">
+                                <h3>Download App</h3>
+                            </div>
+                            <div>
+                                <ul
+                                    class="footer_app_links footer_listing d-flex flex-column w-100">
+                                    <li><a><img
+                                                class="w-100 h-100 object-fit-cover"
+                                                src="images/google (1).png"></a></li>
+                                    <li><a><img
+                                                class="w-100 h-100 object-fit-cover"
+                                                src="images/google (2).png"></a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div
+                        class="copyright_footer d-flex align-items-center justify-content-center w-100 text-center">
+                        <p>LACAS School System 2024. All rights reserved</p>
+                    </div>
+                </div>
+            </section>
+        </footer>
+
+        <div class="modal fade" id="AcademicsMenu" tabindex="-1"
+            aria-labelledby="AcademicsMenuLabel" aria-hidden="true">
+            <div
+                class="modal-dialog modal-fullscreen-sm-down w-100 h-100 m-0 p-0">
+                <div class="modal-content border-0 h-100">
+                    <div class="modal-body menu2_parent position-relative">
+                        <div class="custom_container">
+                            <div
+                                class="menu2_header d-flex w-100 align-items-center justify-content-between">
+                                <h5>Academics</h5>
+                                <img src="images/logo.png"
+                                    class="object-fit-cover w-100"
+                                    alt="Logo">
+                                <a class="d-flex align-items-center"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"><span>Close</span> <i
+                                        class="fas fa-times"></i></a>
+                            </div>
+                            <div
+                                class="menu2_box d-flex flex-column align-items-center justify-content-center text-center w-100">
+                                <div
+                                    class="menu2_content d-flex flex-column align-items-center justify-content-center text-center">
+                                    <a>Reach</a>
+                                </div>
+                                <div
+                                    class="menu2_content d-flex flex-column align-items-center justify-content-center text-center">
+                                    <a>Primary to Middle School</a>
+                                    <small>Grade 1 to 8</small>
+                                </div>
+                                <div
+                                    class="menu2_content d-flex flex-column align-items-center justify-content-center text-center">
+                                    <a>O Level</a>
+                                    <small>Grade 9 to 11</small>
+                                </div>
+                                <div
+                                    class="menu2_content d-flex flex-column align-items-center justify-content-center text-center">
+                                    <a>A Level</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="CampusesMenu" tabindex="-1"
+            aria-labelledby="CampusesMenuLabel" aria-hidden="true">
+            <div
+                class="modal-dialog modal-fullscreen-sm-down w-100 h-100 m-0 p-0">
+                <div class="modal-content border-0 h-100">
+                    <div class="modal-body menu1_parent position-relative">
+                        <div class="custom_container">
+                            <div
+                                class="menu1_header d-flex w-100 align-items-center justify-content-between">
+                                <h5>Campuses</h5>
+                                <img src="images/logo.png"
+                                    class="object-fit-cover w-100"
+                                    alt="Logo">
+                                <a class="d-flex align-items-center"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"><span>Close</span> <i
+                                        class="fas fa-times"></i></a>
+                            </div>
+                            <div class="menu1_box d-grid w-100">
+                                <a><span>LACAS Johar Town</span></a>
+                                <a><span>LACAS Gulberg Senior</span></a>
+                                <a><span>LACAS Burki</span></a>
+                                <a><span>LACAS Gujranwala</span></a>
+                                <a><span>LACAS Canal Side Campus</span></a>
+                                <a><span>LACAS Islamabad</span></a>
+                                <a><span>LACAS Gulberg Junior</span></a>
+                            </div>
+                            <div
+                                class="menu1_box2 d-flex flex-column w-100">
+                                <h4>A Level Campuses</h4>
+                                <div
+                                    class="menu1_box2_listing d-grid w-100">
+                                    <a><span>LACAS Johar Town</span></a>
+                                    <a><span>LACAS Gulberg Senior</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu"
+            aria-labelledby="mobileMenuLabel">
+            <div
+                class="mobile_menu_header offcanvas-header position-relative align-items-center justify-content-center">
+                <a href="/" class="header_logo d-flex">
+                    <img src="images/logo.png"
+                        class="object-fit-cover w-100"
+                        alt="Logo">
+                </a>
+                <button data-bs-dismiss="offcanvas" aria-label="Close"><i
+                        class="fas fa-times"></i></button>
+            </div>
+            <div class="offcanvas-body">
+                <div
+                    class="mobile_listing d-flex flex-column text-center align-items-center">
+                    <a class="active">home</a>
+                    <a>about us</a>
+                    <a data-bs-toggle="modal"
+                        data-bs-target="#CampusesMenu">campuses <i
+                            class="fas fa-angle-down"></i></a>
+                    <a>Alumni portal</a>
+                    <a data-bs-toggle="modal"
+                        data-bs-target="#AcademicsMenu">Academics <i
+                            class="fas fa-angle-down"></i></a>
+                    <a>contact</a>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>

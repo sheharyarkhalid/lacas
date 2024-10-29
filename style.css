@@ -2512,9 +2512,11 @@ object-fit: cover;
   display: grid;
   width: 100%;
   gap: 7px 0px;
-  padding-bottom: 20px;
+  padding-bottom: 13px;
 }
-
+.contact_sub_btn {
+  padding-top: 33px;
+}
 .contact_us_form_fields input {
   border: 1px solid #fff;
   background: #fff;
