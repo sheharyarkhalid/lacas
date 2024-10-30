@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta charset="utf-8" />
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+
+        <title>OBW Website</title>
+
+        <!-- fontawsome CSS -->
+        <link rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+            integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+            crossorigin="anonymous" />
+        <link rel="stylesheet"
+            href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css"
+            crossorigin="anonymous" />
+
+        <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55"
+            rel="stylesheet">
+
+        <!--google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+            rel="stylesheet">
+
+        <!-- Bootstrap 5 CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous">
+
+        <!-- jQuery JS -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <!-- Bootstrap 5 JS -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+
+        <link rel=stylesheet type=text/css href="css/slick.css" />
+
+        <!-- custom CSS -->
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="css/o-level.css" />
+
+        <script type="text/javascript" src="js/slick.min.js"></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Observer.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/MotionPathPlugin.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+
+        <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/EasePack.min.js"></script>
+        <!-- custom JS -->
+        <script src="script.js"></script>
+
+    </head>
+
+    <body>
+
+        <header class="desk_header d-block">
+            <div class="custom_container">
+                <div
+                    class="d-flex align-items-center justify-content-between w-100">
+                    <a href="/" class="header_logo d-flex">
+                        <img src="images/logo.png"
+                            class="object-fit-cover w-100" alt="Logo" />
+                    </a>
+                    <div
+                        class="header_listing d-lg-flex d-none align-items-center">
+                        <a class="active">home</a>
+                        <a>about us</a>
+                        <a data-bs-toggle="modal"
+                            data-bs-target="#CampusesMenu">campuses <i
+                                class="fas fa-angle-down"></i></a>
+                        <a>Alumni portal</a>
+                        <a data-bs-toggle="modal"
+                            data-bs-target="#AcademicsMenu">Academics
+                            <i class="fas fa-angle-down"></i></a>
+                        <a>contact</a>
+                    </div>
+                    <div
+                        class="header_btns d-lg-flex d-none align-items-center">
+                        <a class="header_search_bar position-relative">
+                            <i class="fal fa-search header_search_btn"></i>
+                            <form class="header_search_form">
+                                <input type="text" class="search_input"
+                                    placeholder="Search here">
+                            </form>
+                        </a>
+                        <a class="header_login_btn">Login</a>
+                    </div>
+
+                    <a class="header_toggle_btn d-lg-none d-flex"
+                        data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+                        aria-controls="mobileMenu">
+                        <i class="fal fa-bars"></i></a>
+                </div>
+            </div>
+        </header>
+
+        <section
+            class="olevel_sec1 d-inline-block float-start w-100 float-start">
+            <div class="custom_container">
+                <div
+                    class="olevel1_header d-flex flex-column w-100 align-items-center justify-content-center text-center">
+                    <h2>O Level</h2>
+                    <p>Grade 9 to 11 </p>
+                </div>
+                <div class="olevel1_box d-grid">
+                    <div class="olevel1_des1 w-100 h-100 d-grid">
+                        <img class="w-100 h-100 object-fit-cover"
+                            src="images/Mask group (55).png">
+                        <img class="w-100 h-100 object-fit-cover"
+                            src="images/Mask group (56).png">
+                    </div>
+                    <div class="olevel1_des2 w-100 h-100">
+                        <img class="w-100 h-100 object-fit-cover"
+                            src="images/Mask group (57).png">
+                    </div>
+                    <div class="olevel1_des3 w-100 h-100 d-grid">
+
+                        <div class="olevel1_des3_fig d-grid w-100">
+                            <figcaption class="d-grid">
+                                <img class="w-100 h-100 object-fit-cover"
+                                    src="images/Mask group (58).png">
+                                <img class="w-100 h-100 object-fit-cover"
+                                    src="images/Mask group (59).png">
+                            </figcaption>
+                            <img class="w-100 h-100 object-fit-cover"
+                                src="images/Mask group (60).png">
+                        </div>
+
+                        <div
+                            class="olevel1_des3_data d-flex flex-column w-100 h-100">
+                            <div
+                                class="olevel1_des3_content d-flex flex-column align-items-center justify-content-center text-center h-100">
+                                <h3>
+                                    Enrol your child today for an education that
+                                    serves beyond the classroom
+                                </h3>
+                                <a>Apply now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="olevel1_des d-flex w-100 text-center align-items-center justify-content-center"><p>The
+                        curriculum at LACAS combines traditional subjects with
+                        modern disciplines to promote holistic development,
+                        emphasizing IT integration across all areas of study.
+                        Students are encouraged to cultivate digital literacy
+                        and proficiency, using technology not only as a tool but
+                        also as a medium for creative expression and
+                        problem-solving. The curriculum aims to foster critical
+                        thinking, communication, collaboration, and creativity,
+                        which are essential skills for the 21st
+                        century.</p></div>
+            </div>
+        </section>
+
+        <section class="olevel_sec2 d-inline-block w-100">
+            <div class="custom_container">
+
+                <div class="olevel2_listing_main d-grid w-100 ">
+                    <div
+                        class="olevel2_first_anim olevel2_single_list d-grid w-100 align-items-center">
+                        <figure
+                            class="olevel2_first_anim_box olevel2_list1 w-100 d-md-grid d-grid">
+                            <img
+                                class="olevel2_first_anim_img w-100 h-100 object-fit-cover"
+                                lazy="loading"
+                                src="images/Mask group (17).png">
+                            <img
+                                class="olevel2_transform w-100 h-100 object-fit-cover"
+                                lazy="loading"
+                                src="images/Mask group (18).png">
+
+                        </figure>
+                        <div class="olevel2_listing_content d-flex flex-column">
+                            <small>Integrating</small>
+                            <h3>Technology and Innovation</h3>
+                            <img
+                                class="w-100 h-100 object-fit-cover d-md-none d-none"
+                                lazy="loading"
+                                src="images/Mask group (18).png">
+                            <div class="olevel2_des d-flex flex-column">
+                                <p>At LACAS, technology plays a pivotal role in
+                                    creating a vibrant, modern learning
+                                    environment. Our EyeRIS Math Labs transform
+                                    traditional math lessons into interactive
+                                    experiences.</p>
+                                <p> Similarly, our Language Labs focus on
+                                    enhancing students' verbal and comprehension
+                                    skills through immersive activities, helping
+                                    them build confidence in communication. </p>
+                                <p> The Science Labs provide hands-on
+                                    experimentation opportunities that spark
+                                    curiosity and critical thinking, enabling
+                                    students to engage deeply with scientific
+                                    concepts.</p>
+                            </div>
+                            <img
+                                class="w-100 h-100 object-fit-cover d-md-none d-none"
+                                lazy="loading"
+                                src="images/Mask group (17).png">
+
+                        </div>
+                    </div>
+
+                    <div
+                        class="olevel2_sec_anim olevel2_single_list d-grid w-100 align-items-center">
+
+                        <div class="olevel2_listing_content d-flex flex-column">
+                            <small>Developing </small>
+                            <h3>Future-Ready Learners</h3>
+                            <img
+                                class="w-100 h-100 object-fit-cover d-md-none d-none"
+                                lazy="loading"
+                                src="images/Mask group (19).png">
+                            <div class="olevel2_des">
+                                <p>At LACAS, we believe in a holistic approach
+                                    to education that goes beyond academics,
+                                    preparing students for a rapidly evolving
+                                    world. Our curriculum integrates
+                                    personalized learning paths, allowing
+                                    students to explore areas of interest while
+                                    building 21st-century skills such as
+                                    collaboration, communication, and critical
+                                    thinking.</p>
+                                <p> Programs like Robotics through Art (RTA) and
+                                    STEAM Labs foster creativity and technical
+                                    proficiency, encouraging innovation at the
+                                    intersection of art and engineering.</p>
+                                <p> This balanced focus on technology,
+                                    creativity, and ethical responsibility
+                                    prepares our learners to lead with knowledge
+                                    and integrity.</p>
+                            </div>
+                            <img
+                                class="w-100 h-100 object-fit-cover d-md-none d-none"
+                                lazy="loading"
+                                src="images/Mask group (20).png">
+
+                        </div>
+                        <figure
+                            class="olevel2_sec_anim_box olevel2_list2 home_5_reverse_img w-100 d-md-grid d-grid">
+                            <img
+                                class="olevel2_transform w-100 h-100 object-fit-cover"
+                                lazy="loading"
+                                src="images/Mask group (19).png">
+                            <img
+                                class="olevel2_sec_anim_img w-100 h-100 object-fit-cover"
+                                lazy="loading"
+                                src="images/Mask group (20).png">
+                        </figure>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section
+            class="olevel_sec3 d-inline-block float-start w-100 float-start">
+            <div class="custom_container">
+                <div
+                    class="olevel3_content d-flex flex-column w-100 align-items-center justify-content-center text-center">
+                    <h2>Compulsory Subjects</h2>
+                </div>
+                <div class="olevel3_box d-grid w-100">
+                    <div class="olevel3_box_data d-flex w-100 h-100">
+                        <figcaption
+                            class="d-flex flex-column position-relative w-100 h-100">
+                            <small>1123</small>
+                            <h6>English
+                                Language</h6>
+                            <img
+                                class=" h-100 object-fit-cover position-absolute"
+                                src="images/school-_2_ 1.png">
+                        </figcaption>
+                    </div>
+                    <div class="olevel3_box_data d-flex w-100 h-100">
+                        <figcaption
+                            class="d-flex flex-column position-relative w-100 h-100">
+                            <small>4024</small>
+                            <h6>Mathematics</h6>
+                            <img
+                                class=" h-100 object-fit-cover position-absolute"
+                                src="images/math 1.png">
+                        </figcaption>
+                    </div>
+                    <div class="olevel3_box_data d-flex w-100 h-100">
+                        <figcaption
+                            class="d-flex flex-column position-relative w-100 h-100">
+                            <small>3248</small>
+                            <h6>Urdu - Second
+                                Language</h6>
+                            <img
+                                class=" h-100 object-fit-cover position-absolute"
+                                src="images/Group (6).png">
+                        </figcaption>
+                    </div>
+                    <div class="olevel3_box_data d-flex w-100 h-100">
+                        <h5 class="d-flex w-100 h-100 align-items-end">
+                            Setting the foundation
+                            for holistic education
+                        </h5>
+                    </div>
+                    <div class="olevel3_box_data d-flex w-100 h-100">
+                        <h4 class="d-flex align-items-center w-100">
+                            Carefully crafted
+                            curriculum for
+                            true enlightenment</h4>
+                    </div>
+                    <div class="olevel3_box_data d-flex w-100 h-100">
+                        <figcaption
+                            class="d-flex flex-column position-relative w-100 h-100">
+                            <small>2058</small>
+                            <h6>Islamiyat</h6>
+                            <img
+                                class=" h-100 object-fit-cover position-absolute"
+                                src="images/Artboard 119 1.png">
+                        </figcaption>
+                    </div>
+                    <div class="olevel3_box_data d-flex w-100 h-100">
+                        <figcaption
+                            class="d-flex flex-column position-relative w-100 h-100">
+                            <small>2069</small>
+                            <h6>Global
+                                Perspectives</h6>
+                            <img
+                                class=" h-100 object-fit-cover position-absolute"
+                                src="images/globe 1.png">
+                        </figcaption>
+                    </div>
+                    <div class="olevel3_box_data d-flex w-100 h-100">
+                        <figcaption
+                            class="d-flex flex-column position-relative w-100 h-100">
+                            <small>2059</small>
+                            <h6>Pakistan
+                                Studies</h6>
+                            <img
+                                class=" h-100 object-fit-cover position-absolute"
+                                src="images/Asset 2 1.png">
+                        </figcaption>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section
+            class="olevel_sec4 d-inline-block float-start w-100 float-start">
+            <div class="custom_container">
+                <div
+                    class="olevel4_content d-flex flex-column w-100 align-items-center justify-content-center text-center">
+                    <h2>Optional Subjects</h2>
+                </div>
+                <div class="olevel4_parent d-grid w-100">
+                <div class="olevel4_box d-grid w-100">
+                    <div class="olevel4_box_data d-flex w-100 h-100">
+                        <figcaption
+                            class="d-flex flex-column position-relative w-100 h-100">
+                            <small>1123</small>
+                            <h6>English
+                                Language</h6>
+                            <img
+                                class=" h-100 object-fit-cover position-absolute"
+                                src="images/group99 (1).png">
+                        </figcaption>
+                    </div>
+                    <div class="olevel4_box_data d-flex w-100 h-100">
+                        <figcaption
+                            class="d-flex flex-column position-relative w-100 h-100">
+                            <small>4024</small>
+                            <h6>Mathematics</h6>
+                            <img
+                                class=" h-100 object-fit-cover position-absolute"
+                                src="images/group99 (3).png">
+                        </figcaption>
+                    </div>
+                    <div class="olevel4_box_data d-flex w-100 h-100">
+                        <figcaption
+                            class="d-flex flex-column position-relative w-100 h-100">
+                            <small>3248</small>
+                            <h6>Urdu - Second
+                                Language</h6>
+                            <img
+                                class=" h-100 object-fit-cover position-absolute"
+                                src="images/group99 (2).png">
+                        </figcaption>
+                    </div>
+                    <div class="olevel4_box_data d-flex w-100 h-100">
+                        <figcaption
+                            class="d-flex flex-column position-relative w-100 h-100">
+                            <small>2058</small>
+                            <h6>Islamiyat</h6>
+                            <img
+                                class=" h-100 object-fit-cover position-absolute"
+                                src="images/group99 (4).png">
+                        </figcaption>
+                    </div>
+                </div>
+                
+                 <div class="olevel4_box3 d-grid w-100 h-100">
+                  <div class="olevel4_box3_heading">
+                     <h3 class="d-flex align-items-center h-100">Offering an array of 
+                        elective subjects 
+                        to broaden 
+                        academic horizons!</h3>
+                  </div>
+                  <div class="olevel4_box3_content_parent d-grid">
+                  <div class="olevel4_box3_content d-grid">
+                    <div class="olevel4_box_data d-flex w-100 h-100">
+                        <figcaption
+                            class="d-flex flex-column position-relative w-100 h-100">
+                            <small>2210</small>
+                            <h6>Computer 
+                                Science</h6>
+                            <img
+                                class=" h-100 object-fit-cover position-absolute"
+                                src="images/group100 (2).png">
+                        </figcaption>
+                    </div>
+                    <div class="olevel4_box_data d-flex w-100 h-100">
+                        <figcaption
+                            class="d-flex flex-column position-relative w-100 h-100">
+                            <small>2210</small>
+                            <h6>Art & 
+                                Design</h6>
+                            <img
+                                class=" h-100 object-fit-cover position-absolute"
+                                src="images/group100 (1).png">
+                        </figcaption>
+                    </div>
+                  </div>
+                  <figure class="w-100 h-100">
+                    <img class="w-100 h-100 object-fit-cover" src="images/IMG_0112 1.png">
+                  </figure>
+                  </div>
+                 </div>
+
+
+                 <div class="olevel4_box2 d-grid">
+                    <div class="olevel4_box2_content_parent d-grid">
+                    <div class="olevel4_box2_content d-grid">
+                        <div class="olevel4_box_data d-flex w-100 h-100">
+                            <figcaption
+                                class="d-flex flex-column position-relative w-100 h-100">
+                                <small>7707</small>
+                                <h6>Accounting</h6>
+                                <img
+                                    class=" h-100 object-fit-cover position-absolute"
+                                    src="images/gr1 (3).png">
+                            </figcaption>
+                        </div>
+                        <div class="olevel4_box_data d-flex w-100 h-100">
+                            <figcaption
+                                class="d-flex flex-column position-relative w-100 h-100">
+                                <small>7115</small>
+                                <h6>Business 
+                                    Studies</h6>
+                                <img
+                                    class=" h-100 object-fit-cover position-absolute"
+                                    src="images/gr1 (1).png">
+                            </figcaption>
+                        </div>
+                        <div class="olevel4_box_data d-flex w-100 h-100">
+                            <figcaption
+                                class="d-flex flex-column position-relative w-100 h-100">
+                                <small>0417</small>
+                                <h6>ICT</h6>
+                                <img
+                                    class=" h-100 object-fit-cover position-absolute"
+                                    src="images/gr1 (2).png">
+                            </figcaption>
+                        </div>
+                    </div>
+                    <div class="olevel4_box2_content d-grid">
+                        <div class="olevel4_box_data d-flex w-100 h-100">
+                            <figcaption
+                                class="d-flex flex-column position-relative w-100 h-100">
+                                <small>2010</small>
+                                <h6>Literature 
+                                    in English</h6>
+                                <img
+                                    class=" h-100 object-fit-cover position-absolute"
+                                    src="images/gp1 (1).png">
+                            </figcaption>
+                        </div>
+                        <div class="olevel4_box_data d-flex w-100 h-100">
+                            <figcaption
+                                class="d-flex flex-column position-relative w-100 h-100">
+                                <small>4037</small>
+                                <h6>Mathematics
+                                    Additional</h6>
+                                <img
+                                    class=" h-100 object-fit-cover position-absolute"
+                                    src="images/gp1 (2).png">
+                            </figcaption>
+                        </div>
+                        <div class="olevel4_box_data d-flex w-100 h-100">
+                            <img class="w-100 h-100 object-fit-cover" src="images/Mask group (61).png">
+                        </div>
+                    </div>
+                   </div>
+                    <div class="olevel4_box2_figure d-grid">
+                       <img class="w-100 h-100 object-fit-cover" src="images/IMG_0112 1.png">
+                        </div>
+                </div> 
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section
+        class="olevel_sec5 d-inline-block float-start w-100 float-start">
+      
+          <figure class="w-100 h-100">
+            <img class="w-100 h-100 object-fit-cover" src="images/Group 1000010203.png">
+          </figure>
+        
+         </section>
+
+
+     <section
+        class="olevel_sec6 d-inline-block float-start w-100 float-start">
+       <div class="olevel6_header d-flex w-100 text-center align-items-center justify-content-center">
+         <h3>Global Distinctions Earned by our Students</h3>
+        </div>
+        <ul class=" olevel6_slider">
+            <li>
+                <figure class="w-100 h-100 position-relative">
+                  
+                  <div class="position-relative">  <img class="w-100 h-100 object-fit-cover"
+                        src="images/Mask group (64).png">
+                       
+                    </div>    
+                      
+                </figure>
+
+            </li>
+            <li>
+                <figure class="w-100 h-100 position-relative">
+                  
+                  <div class="position-relative">  <img class="w-100 h-100 object-fit-cover"
+                        src="images/Mask group (63).png">
+                       
+                    </div>    
+                      
+                </figure>
+
+            </li>
+            <li>
+                <figure class="w-100 h-100 position-relative">
+                  
+                  <div class="position-relative">  <img class="w-100 h-100 object-fit-cover"
+                        src="images/Mask group (65).png">
+                       
+                    </div>    
+                      
+                </figure>
+
+            </li>
+            <li>
+                <figure class="w-100 h-100 position-relative">
+                  
+                  <div class="position-relative">  <img class="w-100 h-100 object-fit-cover"
+                        src="images/Mask group (63).png">
+                       
+                    </div>    
+                      
+                </figure>
+
+            </li>
+            <li>
+                <figure class="w-100 h-100 position-relative">
+                  
+                  <div class="position-relative">  <img class="w-100 h-100 object-fit-cover"
+                        src="images/Mask group (64).png">
+                       
+                    </div>    
+                      
+                </figure>
+
+            </li>
+        </ul>
+    </section> 
+
+        
+        <footer class="footer_parent d-flex flex-column w-100">
+            <section class="newsletter_section d-inline-block w-100">
+                <div class="custom_container">
+                    <div
+                        class="newsletter_box d-grid w-100 align-items-center">
+                        <div class="newsletter_content d-flex flex-column">
+                            <h3>NEWSLETTER</h3>
+                            <p> Subscribe for our updates and news </p>
+                        </div>
+                        <form>
+                            <div
+                                class="newsletter_fields d-flex flex-column position-relative">
+                                <i class="far fa-envelope"></i>
+                                <input type="email" name="email"
+                                    placeholder="Enter your email here" />
+                                <button class="submitted btn"> Submit
+                                </button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </section>
+            <section class="footer_section d-inline-block w-100">
+                <div class="custom_container">
+                    <div
+                        class="footer_header d-flex flex-column w-100 align-items-center justify-content-center text-center">
+                        <figure class="m-0"><img
+                                class="w-100 h-100 object-fit-cover"
+                                src="images/footerlogo.png"></figure>
+                        <p>LACAS School Network is dedicated to fostering
+                            academic
+                            excellence,
+                            creativity, and personal growth in every
+                            student.
+                            With a
+                            commitment
+                            to innovation and holistic development, we
+                            empower
+                            young minds
+                            to
+                            excel in academics, sports, and extracurricular
+                            pursuits,
+                            preparing
+                            them for success in a rapidly evolving world.
+                            Our
+                            legacy of over
+                            three decades continues to shape future leaders
+                            who
+                            are
+                            confident,
+                            compassionate, and ready to make a
+                            difference.</p>
+                    </div>
+                    <div class="footer_content_parent d-grid w-100">
+                        <div class="footer_content d-grid w-100">
+
+                            <div class="footer_content_box">
+
+                                <div
+                                    class="footer_listing_header position-relative">
+                                    <h3>Site Links</h3>
+                                </div>
+                                <div>
+                                    <ul
+                                        class="footer_listing d-flex flex-column w-100">
+                                        <li><a>Home</a></li>
+                                        <li><a>About</a></li>
+                                        <li><a>Campuses</a></li>
+                                        <li><a>Academics</a></li>
+                                        <li><a>Find LACAS</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="footer_content_box">
+
+                                <div
+                                    class="footer_listing_header position-relative">
+                                    <h3>Quick links</h3>
+                                </div>
+                                <div>
+                                    <ul
+                                        class="footer_listing d-flex flex-column w-100">
+                                        <li><a>Newsletter</a></li>
+                                        <li><a>Bulletin Board</a></li>
+                                        <li><a>Prospectus</a></li>
+                                        <li><a>Career</a></li>
+                                        <li><a>Fee Bills</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="footer_content_box">
+
+                                <div
+                                    class="footer_listing_header position-relative">
+                                    <h3>Academics</h3>
+                                </div>
+                                <div>
+                                    <ul
+                                        class="footer_listing d-flex flex-column w-100">
+                                        <li><a>LACAS Portal</a></li>
+                                        <li><a>School Policies</a></li>
+                                        <li><a>Events Calendar</a></li>
+                                        <li><a>Academic Calendar</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="footer_content_box">
+
+                                <div
+                                    class="footer_listing_header position-relative">
+                                    <h3>Connect with us</h3>
+                                </div>
+                                <div>
+                                    <ul
+                                        class="footer_listing d-flex flex-column w-100">
+                                        <li><a>Facebook</a></li>
+                                        <li><a>Instagram</a></li>
+                                        <li><a>Linkedin</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="footer_content_box">
+
+                            <div
+                                class="footer_listing_header position-relative text-center">
+                                <h3>Download App</h3>
+                            </div>
+                            <div>
+                                <ul
+                                    class="footer_app_links footer_listing d-flex flex-column w-100">
+                                    <li><a><img
+                                                class="w-100 h-100 object-fit-cover"
+                                                src="images/google (1).png"></a></li>
+                                    <li><a><img
+                                                class="w-100 h-100 object-fit-cover"
+                                                src="images/google (2).png"></a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div
+                        class="copyright_footer d-flex align-items-center justify-content-center w-100 text-center">
+                        <p>LACAS School System 2024. All rights reserved</p>
+                    </div>
+                </div>
+            </section>
+        </footer>
+
+        <div class="modal fade" id="AcademicsMenu" tabindex="-1"
+            aria-labelledby="AcademicsMenuLabel" aria-hidden="true">
+            <div
+                class="modal-dialog modal-fullscreen-sm-down w-100 h-100 m-0 p-0">
+                <div class="modal-content border-0 h-100">
+                    <div class="modal-body menu2_parent position-relative">
+                        <div class="custom_container">
+                            <div
+                                class="menu2_header d-flex w-100 align-items-center justify-content-between">
+                                <h5>Academics</h5>
+                                <img src="images/logo.png"
+                                    class="object-fit-cover w-100"
+                                    alt="Logo">
+                                <a class="d-flex align-items-center"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"><span>Close</span> <i
+                                        class="fas fa-times"></i></a>
+                            </div>
+                            <div
+                                class="menu2_box d-flex flex-column align-items-center justify-content-center text-center w-100">
+                                <div
+                                    class="menu2_content d-flex flex-column align-items-center justify-content-center text-center">
+                                    <a>Reach</a>
+                                </div>
+                                <div
+                                    class="menu2_content d-flex flex-column align-items-center justify-content-center text-center">
+                                    <a>Primary to Middle School</a>
+                                    <small>Grade 1 to 8</small>
+                                </div>
+                                <div
+                                    class="menu2_content d-flex flex-column align-items-center justify-content-center text-center">
+                                    <a>O Level</a>
+                                    <small>Grade 9 to 11</small>
+                                </div>
+                                <div
+                                    class="menu2_content d-flex flex-column align-items-center justify-content-center text-center">
+                                    <a>A Level</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="CampusesMenu" tabindex="-1"
+            aria-labelledby="CampusesMenuLabel" aria-hidden="true">
+            <div
+                class="modal-dialog modal-fullscreen-sm-down w-100 h-100 m-0 p-0">
+                <div class="modal-content border-0 h-100">
+                    <div class="modal-body menu1_parent position-relative">
+                        <div class="custom_container">
+                            <div
+                                class="menu1_header d-flex w-100 align-items-center justify-content-between">
+                                <h5>Campuses</h5>
+                                <img src="images/logo.png"
+                                    class="object-fit-cover w-100"
+                                    alt="Logo">
+                                <a class="d-flex align-items-center"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"><span>Close</span> <i
+                                        class="fas fa-times"></i></a>
+                            </div>
+                            <div class="menu1_box d-grid w-100">
+                                <a><span>LACAS Johar Town</span></a>
+                                <a><span>LACAS Gulberg Senior</span></a>
+                                <a><span>LACAS Burki</span></a>
+                                <a><span>LACAS Gujranwala</span></a>
+                                <a><span>LACAS Canal Side Campus</span></a>
+                                <a><span>LACAS Islamabad</span></a>
+                                <a><span>LACAS Gulberg Junior</span></a>
+                            </div>
+                            <div
+                                class="menu1_box2 d-flex flex-column w-100">
+                                <h4>A Level Campuses</h4>
+                                <div
+                                    class="menu1_box2_listing d-grid w-100">
+                                    <a><span>LACAS Johar Town</span></a>
+                                    <a><span>LACAS Gulberg Senior</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu"
+            aria-labelledby="mobileMenuLabel">
+            <div
+                class="mobile_menu_header offcanvas-header position-relative align-items-center justify-content-center">
+                <a href="/" class="header_logo d-flex">
+                    <img src="images/logo.png"
+                        class="object-fit-cover w-100"
+                        alt="Logo">
+                </a>
+                <button data-bs-dismiss="offcanvas" aria-label="Close"><i
+                        class="fas fa-times"></i></button>
+            </div>
+            <div class="offcanvas-body">
+                <div
+                    class="mobile_listing d-flex flex-column text-center align-items-center">
+                    <a class="active">home</a>
+                    <a>about us</a>
+                    <a data-bs-toggle="modal"
+                        data-bs-target="#CampusesMenu">campuses <i
+                            class="fas fa-angle-down"></i></a>
+                    <a>Alumni portal</a>
+                    <a data-bs-toggle="modal"
+                        data-bs-target="#AcademicsMenu">Academics <i
+                            class="fas fa-angle-down"></i></a>
+                    <a>contact</a>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>

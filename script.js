@@ -338,6 +338,51 @@ centerPadding: '0px',
     ],
   });
 
+  $(".olevel6_slider").slick({
+    slidesToShow: 3,
+    arrows: false,
+    dots: false,
+    slidesToScroll: 1,
+    autoplay:true,
+    centerMode: true,
+    centerPadding: '220px',
+    autoplaySpeed:1000,
+    responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          centerPadding: '160px',
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          centerPadding: '120px',
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          centerPadding: '80px',
+        },
+      },
+      {
+        breakpoint: 540,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerPadding: '60px',
+        },
+      },
+    ],
+  });
+
 });
 
  // use a script tag or an external JS file
@@ -345,9 +390,10 @@ centerPadding: '0px',
   gsap.registerPlugin(Flip,ScrollTrigger,Observer,ScrollToPlugin,Draggable,MotionPathPlugin,TextPlugin,SlowMo);
 
 	const home5_first_anim = document.querySelector('.home5_first_anim');
-  const home5_first_anim_box = home5_first_anim.querySelectorAll('.home5_first_anim_box');
-  const home5_first_anim_single = home5_first_anim.querySelectorAll('.home5_first_anim_img');
 
+  if (home5_first_anim) {
+    const home5_first_anim_box = home5_first_anim.querySelectorAll('.home5_first_anim_box');
+  const home5_first_anim_single = home5_first_anim.querySelectorAll('.home5_first_anim_img');
   let first = gsap.timeline({
   	paused: true,
     scrollTrigger: {
@@ -363,12 +409,13 @@ centerPadding: '0px',
   .from(home5_first_anim_single, {
   	yPercent: (i)=> i ? 15 : -15
   }, '<')
-  
+}
 
 	const home5_sec_anim = document.querySelector('.home5_sec_anim');
-  const home5_sec_anim_box = home5_sec_anim.querySelectorAll('.home5_sec_anim_box');
-  const home5_sec_anim_single = home5_sec_anim.querySelectorAll('.home5_sec_anim_img');
 
+  if (home5_sec_anim) {
+    const home5_sec_anim_box = home5_sec_anim.querySelectorAll('.home5_sec_anim_box');
+    const home5_sec_anim_single = home5_sec_anim.querySelectorAll('.home5_sec_anim_img');
   let sec = gsap.timeline({
   	paused: true,
     scrollTrigger: {
@@ -384,14 +431,15 @@ centerPadding: '0px',
   .from(home5_sec_anim_single, {
   	yPercent: (i)=> i ? 15 : -15
   }, '<')
-
+  }
 
 
 
 	const home5_third_anim = document.querySelector('.home5_third_anim');
-  const home5_third_anim_box = home5_third_anim.querySelectorAll('.home5_third_anim_box');
-  const home5_third_anim_single = home5_third_anim.querySelectorAll('.home5_third_anim_img');
 
+  if (home5_third_anim) {
+    const home5_third_anim_box = home5_third_anim.querySelectorAll('.home5_third_anim_box');
+    const home5_third_anim_single = home5_third_anim.querySelectorAll('.home5_third_anim_img');
   let third = gsap.timeline({
   	paused: true,
     scrollTrigger: {
@@ -407,9 +455,10 @@ centerPadding: '0px',
   .from(home5_third_anim_single, {
   	yPercent: (i)=> i ? 15 : -15
   }, '<')
-
+  }
 
   const home5_fourth_anim = document.querySelector('.home5_fourth_anim');
+  if (home5_fourth_anim) {
   const home5_fourth_anim_box = home5_fourth_anim.querySelectorAll('.home5_fourth_anim_box');
   const home5_fourth_anim_single = home5_fourth_anim.querySelectorAll('.home5_fourth_anim_img');
  
@@ -428,8 +477,53 @@ centerPadding: '0px',
   .from(home5_fourth_anim_single, {
     yPercent: (i)=> i ? 15 : -15
   }, '<')
- 
+}
+// olevel page
 
+
+const olevel2_first_anim = document.querySelector('.olevel2_first_anim');
+if (olevel2_first_anim) {
+const olevel2_first_anim_box = olevel2_first_anim.querySelectorAll('.olevel2_first_anim_box');
+const olevel2_first_anim_single = olevel2_first_anim.querySelectorAll('.olevel2_first_anim_img');
+
+let olevel1 = gsap.timeline({
+  paused: true,
+  scrollTrigger: {
+    trigger: olevel2_first_anim,
+    start: 'top 90%',
+    end: 'bottom 10%',
+    scrub: 1
+  }
+})
+.from(olevel2_first_anim_box, {
+  yPercent: "random(10, 30, 1)",
+})
+.from(olevel2_first_anim_single, {
+  yPercent: (i)=> i ? 15 : -15
+}, '<')
+}
+
+const olevel2_sec_anim = document.querySelector('.olevel2_sec_anim');
+if (olevel2_sec_anim) {
+const olevel2_sec_anim_box = olevel2_sec_anim.querySelectorAll('.olevel2_sec_anim_box');
+const olevel2_sec_anim_single = olevel2_sec_anim.querySelectorAll('.olevel2_sec_anim_img');
+
+let olevel2 = gsap.timeline({
+  paused: true,
+  scrollTrigger: {
+    trigger: olevel2_sec_anim,
+    start: 'top 90%',
+    end: 'bottom 10%',
+    scrub: 1
+  }
+})
+.from(olevel2_sec_anim_box, {
+  yPercent: "random(3, 10, 1)",
+})
+.from(olevel2_sec_anim_single, {
+  yPercent: (i)=> i ? 15 : -15
+}, '<')
+}
  });
 
 

@@ -69,7 +69,7 @@ button:focus-visible {
   top: 0px;
   left: 0px;
   width: 100%;
-  z-index: 1;
+  z-index: 99;
 }
 .desk_header {
   padding: 38px 20px;
@@ -2066,7 +2066,7 @@ div#CampusesMenu .modal-fullscreen-sm-down .modal-content {
   background-image: url("images/Group 1000010417 (1).png");
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 70px 20px 200px 20px;
+  padding: 30px 20px 30px 20px;
 }
 
 .menu1_header {
@@ -2107,7 +2107,7 @@ div#CampusesMenu .modal-fullscreen-sm-down .modal-content {
 .menu1_box {
   grid-template-columns: 1fr 1fr;
   gap: 45px 20px;
-  margin-bottom: 150px;
+  margin-bottom: 85px;
 }
 .menu1_box a {
   font-size: 36px;
@@ -2156,7 +2156,7 @@ div#CampusesMenu .modal-fullscreen-sm-down .modal-content {
   font-size: 56px;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1300px) {
   .menu1_header h5 {
     font-size: 38px;
     line-height: 48px;
@@ -2176,42 +2176,38 @@ div#CampusesMenu .modal-fullscreen-sm-down .modal-content {
     margin-bottom: 80px;
   }
   .menu1_box a {
-    font-size: 28px;
-    line-height: 40px;
+    font-size: 22px;
+    line-height: 32px;
   }
   .menu1_box a span:hover {
-    font-size: 38px;
+    font-size: 32px;
   }
   .menu1_box {
     gap: 30px 20px;
-    margin-bottom: 100px;
+
   }
 
   .menu1_box2 h4 {
-    font-size: 54px;
-    line-height: 62px;
-    padding-bottom: 48px;
+    font-size: 44px;
+    line-height: 50px;
+    padding-bottom: 30px;
   }
   .menu1_box2_listing a {
-    font-size: 28px;
-    line-height: 40px;
+    font-size: 22px;
+    line-height: 32px;
   }
   .menu1_box2_listing a span:hover {
-    font-size: 38px;
+    font-size: 32px;
   }
   .menu1_box2_listing {
     gap: 30px 20px;
   }
 }
-@media (max-width: 1024px) {
-  .menu1_parent {
-    padding: 60px 20px 80px 20px;
-  }
-}
+
 @media (max-width: 768px) {
   .menu1_parent {
-    padding: 75px 20px 60px 20px;
-  }
+    padding: 68px 20px 30px 20px;
+}
   .menu1_header h5 {
     font-size: 30px;
     line-height: 42px;
@@ -2278,7 +2274,7 @@ div#AcademicsMenu .modal-fullscreen-sm-down .modal-content {
   background-image: url("images/Mask group (35).png");
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 70px 20px 200px 20px;
+  padding: 30px 20px 30px 20px;
 }
 
 .menu2_header {
@@ -2328,6 +2324,7 @@ div#AcademicsMenu .modal-fullscreen-sm-down .modal-content {
   font-family: "Cormorant Garamond", serif;
   color: #fff !important;
   transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 .menu2_content small {
   padding-top: 15px;
@@ -2347,7 +2344,21 @@ div#AcademicsMenu .modal-fullscreen-sm-down .modal-content {
   transition: 0.3s ease-in-out;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1300px) {
+  .menu2_header {
+    margin-bottom: 80px;
+}
+.menu2_content {
+  margin-bottom: 55px;
+}
+.menu2_content a {
+  font-size: 28px;
+  line-height: 29px;
+}
+.menu2_content:hover a {
+  font-size: 38px;
+}
+
   .menu2_header h5 {
     font-size: 38px;
     line-height: 48px;
@@ -2380,15 +2391,11 @@ div#AcademicsMenu .modal-fullscreen-sm-down .modal-content {
     margin-bottom: 60px;
   }
 }
-@media (max-width: 1024px) {
-  .menu2_parent {
-    padding: 60px 20px 80px 20px;
-  }
-}
+
 @media (max-width: 768px) {
   .menu2_parent {
-    padding: 75px 20px 60px 20px;
-  }
+    padding: 68px 20px 30px 20px;
+}
   .menu2_header h5 {
     font-size: 30px;
     line-height: 42px;
@@ -2555,7 +2562,6 @@ object-fit: cover;
 .contact_sub_btn button {
   border: 1px solid #c0221f;
   background: #c0221f;
-
   color: #fff;
   font-size: 18px;
   font-style: normal;
@@ -2567,6 +2573,13 @@ object-fit: cover;
   width: 183px;
   height: 34px;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.contact_sub_btn button:hover{
+border-color: #000;
+color: #000;
+background: transparent;
+transition: 0.3s ease-in-out;
 }
 
 @media (max-width: 1400px) {

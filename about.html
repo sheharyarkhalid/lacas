@@ -437,20 +437,17 @@ color: #000;
     position: relative;
     z-index: -1;
 }
-.about6_slider li.slick-slide p{
-    display: none;
+.about6_des{
+    max-width: 1024px;
+    margin: 0 auto;
 }
-.about6_slider li.slick-center p{
-    display: none;
-}
-.about6_slider li p{
+.about6_des p{
     padding-top: 60px;
 font-size: 18px;
 font-weight: 400;
 line-height: 24px;
 color: #000;
 text-align: center;
-position: absolute;
 }
 .about6_slide_content{
 top: 0px;
@@ -461,11 +458,11 @@ height: 100%;
 }
 .about6_slide_content strong{
     font-family: "Cormorant Garamond", serif;
-font-size: 49px;
-font-weight: 700;
-line-height: 56px;
-padding-bottom: 5px;
-color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    padding-bottom: 5px;
+    color: #fff;
 }
 .about6_slide_content small{
 font-size: 12px;
@@ -478,8 +475,15 @@ color: #C0221F;
     padding: 118px 0px 118px 0px !important;
 
 }
+@media (max-width: 1500px) {
+    .about6_slider .slick-list.draggable {
+    padding: 95px 0px 95px 0px !important;
+}
+}
         @media (max-width: 1300px) {
-    
+            .about6_slider .slick-list.draggable {
+        padding: 82px 0px 82px 0px !important;
+    }
     .about_sec6 {
       margin-bottom: 80px;
      
@@ -489,11 +493,23 @@ font-size: 44px;
 line-height: 50px;
         }  
         .about6_slide_content strong {
-    font-size: 28px;
-    line-height: 34px;
+            font-size: 21px;
+            line-height: 24px;
+}
+.about6_slide_content small {
+    font-size: 10px;
+    line-height: 16px;
 }
 .about6_slide_content {
     padding: 10px 10px 20px 10px;
+}
+.about6_des p {
+    padding-top: 30px;
+    font-size: 16px;
+    line-height: 22px;
+}
+.about6_des {
+    max-width: 695px;
 }
 }
   @media (max-width: 1024px) {
@@ -515,7 +531,7 @@ line-height: 30px;
         .about6_header{
             margin-bottom: 20px;
         }
-        .about6_slider li p {
+        .about6_des p {
     padding-top: 30px;
     font-size: 16px;
     line-height: 22px;
@@ -542,37 +558,60 @@ line-height: 30px;
                             </div>
                         </div>    
                           
-                          <p>  Voices of LACAS brings together the unique journeys of our team members who have helped shape LACAS. They reflect on the experiences, lessons, and opportunities that have contributed to their growth, both professionally and personally. These stories highlight our vibrant community, dedication to excellence, and the lifelong connections formed at LACAS, offering an authentic glimpse into our network</p>
+                         
                     </figure>
 
                 </li>
-                <li >
+                <li>
                     <figure class="w-100 h-100 position-relative">
-                        <img class="w-100 h-100 object-fit-cover"
+                      
+                      <div class="position-relative">  <img class="w-100 h-100 object-fit-cover"
                             src="images/Mask group (54).png">
-                            <p>  Voices of LACAS brings together the unique journeys of our team members who have helped shape LACAS. They reflect on the experiences, lessons, and opportunities that have contributed to their growth, both professionally and personally. These stories highlight our vibrant community, dedication to excellence, and the lifelong connections formed at LACAS, offering an authentic glimpse into our network</p>
+                            <div class="about6_slide_content d-flex flex-column text-center align-items-center justify-content-end position-absolute w-100 h-100 ">
+                               <strong>Kashif Ali Sehgal</strong>
+                               <small>Chemistry Teacher</small>
+                            </div>
+                        </div>    
+                          
+                         
                     </figure>
 
                 </li>
-                <li >
+                <li>
                     <figure class="w-100 h-100 position-relative">
-                        <img class="w-100 h-100 object-fit-cover"
+                      
+                      <div class="position-relative">  <img class="w-100 h-100 object-fit-cover"
                             src="images/Mask group (54).png">
-                            <p>  Voices of LACAS brings together the unique journeys of our team members who have helped shape LACAS. They reflect on the experiences, lessons, and opportunities that have contributed to their growth, both professionally and personally. These stories highlight our vibrant community, dedication to excellence, and the lifelong connections formed at LACAS, offering an authentic glimpse into our network</p>
+                            <div class="about6_slide_content d-flex flex-column text-center align-items-center justify-content-end position-absolute w-100 h-100 ">
+                               <strong>Kashif Ali Sehgal</strong>
+                               <small>Chemistry Teacher</small>
+                            </div>
+                        </div>    
+                          
+                         
                     </figure>
 
                 </li>
-                <li class="col-4">
+                <li>
                     <figure class="w-100 h-100 position-relative">
-                        <img class="w-100 h-100 object-fit-cover"
+                      
+                      <div class="position-relative">  <img class="w-100 h-100 object-fit-cover"
                             src="images/Mask group (54).png">
-                       
-                     
+                            <div class="about6_slide_content d-flex flex-column text-center align-items-center justify-content-end position-absolute w-100 h-100 ">
+                               <strong>Kashif Ali Sehgal</strong>
+                               <small>Chemistry Teacher</small>
+                            </div>
+                        </div>    
+                          
+                         
                     </figure>
 
                 </li>
 
             </ul>
+             <div class="about6_des">
+                <p>  Voices of LACAS brings together the unique journeys of our team members who have helped shape LACAS. They reflect on the experiences, lessons, and opportunities that have contributed to their growth, both professionally and personally. These stories highlight our vibrant community, dedication to excellence, and the lifelong connections formed at LACAS, offering an authentic glimpse into our network</p>
+             </div>
         </section> 
 
         <section
