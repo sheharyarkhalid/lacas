@@ -1738,25 +1738,42 @@ div#mobileMenu {
   .insta_section {
     margin-bottom: 80px;
   }
+  .insta_heading h3 {
+    font-size: 36px;
+    line-height: 40px;
+}
+.insta_listing_main {
+  margin-bottom: 40px;
+}
+.insta_listing a{
+  padding: 0px 10px;
+}
+.insta_btn a{
+  font-size: 16px;
+}
 }
 @media (max-width: 1024px) {
   .insta_section {
     margin-bottom: 60px;
   }
   .insta_heading h3 {
-    font-size: 34px;
-    line-height: 41px;
+    font-size: 28px;
+    line-height: 30px;
   }
   .insta_heading {
-    padding-bottom: 25px;
+    padding-bottom: 20px;
   }
   .insta_listing_main {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
   .insta_section {
     padding: 0px 0px;
   }
+  .insta_listing a {
+    padding: 0px 6px;
 }
+}
+
 
 @media (max-width: 768px) {
   .insta_heading {
@@ -1775,9 +1792,7 @@ div#mobileMenu {
     line-height: 20px;
     padding: 7px 34px;
   }
-  .insta_listing a {
-    padding: 0px 6px;
-  }
+
 }
 
 /* footer style */
