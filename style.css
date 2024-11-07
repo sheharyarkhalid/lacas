@@ -53,7 +53,7 @@ ul {
   max-width: 1548px;
   margin: 0 auto;
 }
-@media(max-width:1300px){
+@media(max-width:1500px){
 .custom_container {
   max-width: 1100px;
 }

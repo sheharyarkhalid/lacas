@@ -82,7 +82,7 @@ cursor: pointer;
   gap: 30px;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1500px) {
   .olevel1_header {
     padding-bottom: 20px;
 }
@@ -244,7 +244,7 @@ grid-template-columns: 1.3fr 1fr;
 .olevel2_transform {
 transform: translatey(60px);
 }
-@media (max-width: 1300px) {
+@media (max-width: 1500px) {
 .olevel_sec2 {
 margin-bottom: 80px;
 }
@@ -354,7 +354,7 @@ font-weight: 700;
 line-height: 46px;
 color:#000;
 }
-@media (max-width: 1300px) {
+@media (max-width: 1500px) {
   .olevel_sec3 {
     margin-bottom: 80px;
   }
@@ -467,7 +467,7 @@ color:#000;
   line-height: 71px;
   color: #fff;
 }
-@media (max-width: 1300px) {
+@media (max-width: 1500px) {
   .olevel_sec4 {
     margin-bottom: 80px;
   }
@@ -577,7 +577,7 @@ color:#000;
 .olevel_sec5 {
   margin-bottom: 120px;
 }
-@media (max-width: 1300px) {
+@media (max-width: 1500px) {
   .olevel_sec5 {
     margin-bottom: 80px;
   }
@@ -608,7 +608,7 @@ padding: 0px 20px;
 .olevel6_slider li{
 padding: 0px 15px;
 }
-@media (max-width: 1300px) {
+@media (max-width: 1500px) {
 
 .olevel_sec6 {
 margin-bottom: 80px;
