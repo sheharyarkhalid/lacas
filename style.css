@@ -53,6 +53,11 @@ ul {
   max-width: 1548px;
   margin: 0 auto;
 }
+@media(max-width:1300px){
+.custom_container {
+  max-width: 1100px;
+}
+}
 .focus {
   outline: none !important;
   box-shadow: none !important;
@@ -228,7 +233,13 @@ div#mobileMenu {
   margin-right: 0px;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1300px) {
+  .desk_header {
+    padding: 20px 20px;
+  }
+  .header_login_btn {
+    font-size: 16px;
+  }
   .header_listing a {
     font-size: 14px;
     margin-right: 9px;
@@ -837,7 +848,7 @@ div#mobileMenu {
     line-height: 23px;
   }
 }
-@media (max-width: 1250px) {
+@media (max-width: 1300px) {
   .home_sec4 {
     margin-bottom: 80px;
   }
@@ -993,7 +1004,7 @@ div#mobileMenu {
 .home5_transform {
   transform: translatey(60px);
 }
-@media (max-width: 1250px) {
+@media (max-width: 1300px) {
   .home_sec5 {
     margin-bottom: 80px;
   }
@@ -1178,7 +1189,7 @@ div#mobileMenu {
     height: 700px !important;
   }
 }
-@media (max-width: 1250px) {
+@media (max-width: 1300px) {
   .home_sec6 {
     margin-bottom: 80px;
   }
@@ -1327,7 +1338,7 @@ div#mobileMenu {
     padding: 156px 0px 156px 20px;
   }
 }
-@media (max-width: 1250px) {
+@media (max-width: 1300px) {
   .home_sec7 {
     margin-bottom: 80px;
   }
@@ -1568,7 +1579,7 @@ div#mobileMenu {
   line-height: 24px;
   color: #000;
 }
-@media (max-width: 1250px) {
+@media (max-width: 1300px) {
   .home_sec8 {
     margin-bottom: 80px;
   }
@@ -1723,7 +1734,7 @@ div#mobileMenu {
   padding: 0px 15px;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1300px) {
   .insta_section {
     margin-bottom: 80px;
   }
@@ -1831,7 +1842,7 @@ div#mobileMenu {
 }
 .copyright_footer {
   border-top: 1px solid #ffffff1f;
-  padding: 30px 0px 54px 0px;
+  padding: 30px 0px 30px 0px;
 }
 .copyright_footer p {
   font-size: 18px;
@@ -1856,8 +1867,12 @@ div#mobileMenu {
   .footer_content_parent {
     grid-template-columns: 3fr 1fr;
   }
+  .copyright_footer {
+    padding: 15px 0px 15px 0px;
+  }
 }
 @media (max-width: 768px) {
+  
 }
 @media (max-width: 540px) {
   .footer_content_parent {
@@ -1892,9 +1907,7 @@ div#mobileMenu {
   .footer_content_parent {
     margin-bottom: 30px;
   }
-  .copyright_footer {
-    padding: 15px 0px 26px 0px;
-  }
+
   .copyright_footer p {
     font-size: 14px;
     line-height: 20px;

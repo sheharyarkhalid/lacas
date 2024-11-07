@@ -65,19 +65,19 @@
 }
 @media (max-width: 1300px) {
   .primary_sec1 {
-    padding: 160px 20px 0px 20px;
+    padding: 115px 20px 0px 20px;
     margin-bottom: 80px;
   }
   .primary1_des1 h2 {
-    font-size: 36px;
-    line-height: 44px;
-    padding: 20px 20px;
-    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 35px;
+    padding: 15px 15px;
+    margin-bottom: 15px;
   }
   .primary1_des1 p {
-    font-size: 15px;
-    line-height: 21px;
-    padding-bottom: 20px;
+    font-size: 13px;
+    line-height: 19px;
+    padding-bottom: 15px;
   }
   .primary1_box {
     gap: 20px;
@@ -89,13 +89,18 @@
     gap: 20px;
   }
   .primary1_des3_data h3 {
-    font-size: 36px;
-    line-height: 46px;
+    font-size: 30px;
+    line-height: 35px;
   }
   .primary1_des3_fig figcaption h4 {
-    font-size: 36px;
-    line-height: 43px;
+    font-size: 30px;
+    line-height: 35px;
     padding-bottom: 20px;
+    max-width: 290px;
+  }
+  .primary1_des3_fig figcaption a {
+    line-height: 23px;
+    font-size: 16px;
   }
 }
 @media (max-width: 1024px) {
