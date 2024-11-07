@@ -233,7 +233,7 @@ div#mobileMenu {
   margin-right: 0px;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1500px) {
   .desk_header {
     padding: 20px 20px;
   }
