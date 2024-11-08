@@ -1,0 +1,255 @@
+/* career page section 1 css start */
+.career_sec1 {
+  padding: 208px 20px 208px 20px;
+  margin-bottom: 120px;
+  background-color: #000;
+}
+.career1_content h2{
+  font-family: "Cormorant Garamond", serif;
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 85px;
+  color: #FFFFFF;
+  padding-bottom: 5px;
+} 
+.career1_content p{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+@media (max-width: 1500px) {
+  .career_sec1 {
+    padding: 115px 20px 110px 20px;
+    margin-bottom: 80px;
+  }
+  .career1_content h2 {
+    font-size: 50px;
+    line-height: 62px;
+}
+.career1_content p {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+ 
+}
+@media (max-width: 1024px) {
+  .career_sec1 {
+    margin-bottom: 60px;
+  }
+  .career_sec1 {
+    padding: 85px 20px 85px 20px;
+}
+.career1_content h2 {
+  font-size: 36px;
+  line-height: 38px;
+}
+.career1_content p {
+  font-size: 11px;
+}
+}
+@media (max-width: 768px) {
+.career_sec1 {
+  padding: 85px 20px 48px 20px;
+}
+}
+/* career page section 1 css end */
+
+/* career page section 2 css start */
+.career_sec2 {
+  padding: 0px 20px;
+  margin-bottom: 120px;
+}
+.career2_content{
+  padding-bottom: 60px;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 117px;
+}
+
+.career2_content h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 66px;
+  color: #000;
+}
+
+.career2_content p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000;
+}
+
+@media (max-width: 1500px) {
+  .career_sec2 {
+    margin-bottom: 80px;
+  }
+  .career2_content {
+    padding-bottom: 30px;
+    gap: 20px 60px;
+}
+  .career2_content h2 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .career2_content p {
+    font-size: 15px;
+    line-height: 20px;
+
+  }
+}
+@media (max-width: 1024px) {
+  .career_sec2 {
+    margin-bottom: 60px;
+  }
+  .career2_content {
+    gap: 15px 60px;
+}
+}
+@media (max-width: 768px) {
+  .career2_content h2 {
+    font-size: 24px;
+    line-height: 26px;
+  }
+  .career2_content p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .career2_content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding-bottom: 20px;
+}
+}
+/* career page section 2 css end */
+
+/* career page section 3 css start */
+.career_sec3 {
+  padding: 0px 20px;
+  margin-bottom: 120px;
+}
+.career3_content h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 66px;
+  color: #000;
+  padding-bottom: 60px;
+}
+.career3_box{
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.career3_single_box{
+  border: 1px solid #0000001A;
+  padding: 20px 30px 5px 30px;
+}
+.career3_content h3{
+  font-family: "Cormorant Garamond", serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+padding-bottom: 45px;
+color: #000;
+padding-right: 40px;
+}
+.career3_content h3 small{
+font-size: 18px;
+font-weight: 400;
+line-height: 24px;
+padding-top: 10px;
+color: #000;
+}
+.career3_content h3 svg{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  font-size: 25px;
+  content: "";
+}
+.career3_content p{
+font-size: 18px;
+font-weight: 400;
+line-height: 24px;
+padding-bottom: 15px;
+color: rgba(0,0,0,65%);
+}
+.career3_listing strong{
+  padding: 0px 15px 15px 0px;
+  font-family: "Cormorant Garamond", serif;
+font-size: 25px;
+font-weight: 700;
+line-height: 35px;
+color: rgba(0,0,0);
+}
+.career3_listing strong svg{
+  padding-right: 10px;
+  font-size: 25px;
+}
+.career3_listing strong:last-child{
+  padding-right: 0px;
+}
+@media (max-width: 1500px) {
+  .career_sec3 {
+    margin-bottom: 80px;
+  }
+  .career3_content h2 {
+    font-size: 36px;
+    line-height: 40px;
+    padding-bottom: 30px;
+  }
+  .career3_content h3 {
+    font-size: 24px;
+    line-height: 34px;
+    padding-bottom: 30px;
+  }
+  .career3_content h3 small {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .career3_content p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .career3_listing strong {
+    font-size: 18px;
+    line-height: 24px;
+}
+}
+@media (max-width: 1024px) {
+  .career_sec3 {
+    margin-bottom: 60px;
+  }
+  .career3_box {
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+.career3_single_box {
+  padding: 20px 20px 5px 20px;
+}
+.career3_content h3 {
+  font-size: 20px;
+  line-height: 25px;
+  padding-bottom: 20px;
+}
+.career3_content p {
+  font-size: 13px;
+  line-height: 19px;
+}
+}
+@media (max-width: 768px) {
+  .career3_content h2 {
+    font-size: 30px;
+    line-height: 28px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+
+}
+/* career page section 3 css end */
+
+
