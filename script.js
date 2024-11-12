@@ -383,6 +383,38 @@ centerPadding: '0px',
     ],
   });
 
+
+  $(".campus3_slider").slick({
+    slidesToShow: 3,
+    arrows: false,
+    dots: false,
+    slidesToScroll: 1,
+    autoplay:false,
+    autoplaySpeed:1000,
+   centerMode: true,
+centerPadding: '0px',
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: '60px',
+        },
+      },
+      {
+        breakpoint: 540,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: '20px',
+        },
+      },
+    ],
+  });
+
 });
 
  // use a script tag or an external JS file

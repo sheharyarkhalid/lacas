@@ -85,6 +85,9 @@ button:focus-visible {
 .header_logo {
   width: 124px;
 }
+.reach_page_logo{
+  width: 44px;
+}
 .header_listing a {
   font-size: 18px;
   font-weight: 400;
@@ -1898,7 +1901,7 @@ div#mobileMenu {
     margin: 0 auto;
   }
   .footer_app_links li a {
-    max-width: 262px;
+    max-width: 175px;
   }
   .footer_app_links li:first-child {
     margin-bottom: 5px;
