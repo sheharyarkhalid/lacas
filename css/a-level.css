@@ -1,0 +1,234 @@
+/* a level page section 1 css start */
+.alevel_sec1 {
+    padding:55px 0px 0px 0px;
+    margin-bottom: 100px;
+    background-image: url('../images/Mask\ group\ \(78\).png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .alevel1_content{
+    padding: 0px 20px;
+    transform: translatey(100px);
+  }
+  .alevel1_content h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 75px;
+    color: #fff;
+    padding-bottom: 30px;
+    margin: 0;
+  }
+  .alevel1_container{
+   max-width: 1285px;
+   margin: 0 auto; 
+  }
+  .alevel1_slider figcaption {
+    bottom: 130px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+.alevel1_slide_content h6{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 46px;
+    color: #fff;
+    padding-bottom: 60px;
+}
+.alevel1_slide_content img{
+    max-width: 148px;
+    margin-bottom: 30px;
+}
+.alevel1_slide_content a{
+    background: #C0221F;
+    border: 1px solid #C0221F;
+font-size: 18px;
+font-weight: 400;
+line-height: 24px;
+color: #fff !important;
+padding: 5px 30px;
+transition: 0.3s ease-in-out;
+}
+.alevel1_slide_content a:hover{
+    background: transparent;
+    border-color:#fff;
+    transition: 0.3s ease-in-out;
+}
+  .alevel1_des{
+    max-width: 1007px;
+    margin: 0 auto;
+    padding: 30px 20px 90px 20px;
+  }
+  .alevel1_des p{
+font-size: 18px;
+font-weight: 400;
+line-height: 24px;
+color: #000;
+
+  }
+  /* .alevel1_content p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #000;
+    margin: 0;
+    max-width: 1285px;
+    padding: 0px 20px;
+  } */
+  
+  .alevel1_slider_dots_wrapper {
+    position: absolute;
+    left: 0px;
+    bottom: 10%;
+    width: 100%;
+    padding: 0px 20px;
+  }
+  .alevel1_slider_container{
+    max-width: 1022px;
+    margin: 0 auto;
+  }
+  .alevel1_slider_dots {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0px;
+    li {
+      width: 100%;
+      margin: 0;
+    }
+    button {
+      position: relative;
+      width: 100%;
+      height: 2px;
+      border: 0;
+      background-color: rgba(233, 236, 239, 0.3);
+      font-size: 0;
+      &:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        display: block;
+        width: 0%;
+        height: 100%;
+      }
+    }
+  
+    .slick-active {
+      button:after {
+        background-color: #fff;
+        animation: progress 5.5s linear forwards;
+      }
+    }
+  }
+  
+  @keyframes progress {
+    from {
+      width: 0%;
+    }
+  
+    to {
+      width: 100%;
+    }
+  }
+
+
+  @media (max-width: 1500px) {
+    .alevel_sec1 {
+      margin-bottom: 80px;
+      padding: 10px 0px 0px 0px;
+  }
+  .alevel1_container {
+    max-width: 1000px;
+}
+
+    .alevel1_content h2 {
+      font-size: 36px;
+      line-height: 40px;
+    }
+  
+    .alevel1_slide_content img {
+        max-width: 90px;
+        margin-bottom: 20px;
+    }
+    .alevel1_slide_content h6 {
+        font-size: 26px;
+        line-height: 31px;
+        padding-bottom: 30px;
+    }
+    .alevel1_slide_content a {
+        font-size: 15px;
+        padding: 3px 30px;
+    }    
+    .alevel1_slider_dots_wrapper {
+        bottom: 5%;
+    }
+    .alevel1_slider figcaption {
+        bottom: 80px;
+    }
+    .alevel1_des{
+    padding: 30px 20px 80px 20px;
+}
+    .alevel1_des p {
+        font-size: 16px;
+      }
+  }
+  
+  @media (max-width: 1024px) {
+    .alevel_sec1 {
+        margin-bottom: 100px;
+  }
+  .alevel1_container {
+    max-width: 100%;
+}
+.alevel1_des{
+    padding: 20px 20px 60px 20px;
+}
+  }
+  
+  @media (max-width: 768px) {
+    .alevel1_content h2 {
+      font-size: 30px;
+      line-height: 28px;
+      padding-bottom: 20px;
+    }
+ 
+    .alevel1_content p {
+      font-size: 14px;
+      line-height: 22px;
+    }
+    .alevel1_slider figcaption {
+        bottom: 40px;
+    }
+    .alevel1_slide_content img {
+        max-width: 55px;
+    }
+    .alevel1_slide_content h6 {
+        font-size: 18px;
+        line-height: 20px;
+        padding-bottom: 20px;
+    }
+    .alevel1_slide_content a {
+        font-size: 13px;
+        padding: 1px 18px;
+    }  
+    .alevel1_content {
+        transform: translatey(45px);
+    }
+    .alevel_sec1 {
+        margin-bottom: 45px;
+        padding: 60px 0px 0px 0px;
+    }  
+    .alevel1_des p {
+        font-size: 14px;
+        line-height: 22px;
+        padding-bottom: 5px;
+    }
+    .alevel1_slider figure > img {
+        height: 225px !important;
+    }
+ 
+}
+  /* a level page section 1 css end */

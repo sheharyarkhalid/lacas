@@ -415,6 +415,58 @@ centerPadding: '0px',
     ],
   });
 
+  $(".campus6_listing").slick({
+    slidesToShow: 3,
+    arrows: false,
+    dots: false,
+    slidesToScroll: 1,
+    rows: 2, 
+    slidesPerRow: 1, 
+    autoplay:false,
+    autoplaySpeed:1000,
+    arrows:true,
+    appendArrows: $('.campus6_arrow'),
+    nextArrow: '<a class="campus6_single_arrow"><i class="fal fa-arrow-right"></i></a>',
+    prevArrow: '<a class="campus6_single_arrow"><i class="fal fa-arrow-left"></i></a>',
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          rows: 1, 
+        },
+      },
+      {
+        breakpoint: 540,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          rows: 1, 
+        },
+      },
+    ],
+  });
+
+
+
+    //alevel1 slider script
+    $(".alevel1_slider").slick({
+      pauseOnHover: false,
+      pauseOnFocus: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: false,
+      autoplaySpeed: 5000,
+      arrows: false,
+      dots: true,
+      dotsClass: "alevel1_slider_dots",
+    });
+  
+    // Wrap the dots in the specified containers
+    $(".alevel1_slider_dots").wrap("<div class='alevel1_slider_dots_wrapper'></div>");
+    $(".alevel1_slider_dots").wrap("<div class='alevel1_slider_container'></div>");
+  
 });
 
  // use a script tag or an external JS file
