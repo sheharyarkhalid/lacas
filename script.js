@@ -175,53 +175,6 @@ console.log('title',title);
     ],
   });
 
-  // $(".about2_slider").slick({
-  //   slidesToShow: 3,
-  //   slidesToScroll: 1,
-  //   autoplay: true,
-  //   autoplaySpeed: 2000,
-  //   dots: false,
-  //   arrows: false,
-
-  //   responsive: [
-  //     {
-  //       breakpoint: 1024,
-  //       settings: {
-  //         slidesToShow: 3,
-  //         slidesToScroll: 1,
-  //         centerMode: true,
-  //         centerPadding: "40px",
-  //       },
-  //     },
-  //     {
-  //       breakpoint: 767,
-  //       settings: {
-  //         slidesToShow: 2,
-  //         slidesToScroll: 1,
-  //         centerMode: true,
-  //         centerPadding: "40px",
-  //       },
-  //     },
-  //     {
-  //       breakpoint: 540,
-  //       settings: {
-  //         slidesToShow: 1,
-  //         slidesToScroll: 1,
-  //         centerMode: true,
-  //         centerPadding: "40px",
-  //       },
-  //     },
-  //     {
-  //       breakpoint: 400,
-  //       settings: {
-  //         slidesToShow: 1,
-  //         slidesToScroll: 1,
-  //         centerMode: true,
-  //         centerPadding: "40px",
-  //       },
-  //     },
-  //   ],
-  // });
 
    $(".about2_slider").slick({
      slidesToShow:3,
@@ -467,6 +420,138 @@ centerPadding: '0px',
     $(".alevel1_slider_dots").wrap("<div class='alevel1_slider_dots_wrapper'></div>");
     $(".alevel1_slider_dots").wrap("<div class='alevel1_slider_container'></div>");
   
+
+
+    $(".alevel4_slider").slick({
+      slidesToShow: 4,
+      arrows: false,
+      dots: false,
+      slidesToScroll: 1,
+      autoplay:true,
+      autoplaySpeed:1000,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 540,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    });
+
+
+    $(".alevel6_slider").slick({
+      slidesToShow:3,
+      slidesToScroll: 1,
+      autoplay: false,
+      autoplaySpeed: 2000,
+      dots: false,
+     arrows: true,
+     appendArrows: $('.alevel_sec6_arrow'),
+     nextArrow: '<a class="alevel6_arrow"><i class="fal fa-arrow-right"></i></a>',
+     prevArrow: '<a class="alevel6_arrow"><i class="fal fa-arrow-left"></i></a>',
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow:2,
+            slidesToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 1500,
+            dots: false,
+            arrows: true,
+          },
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 1500,
+                 dots: false,
+              arrows: true,
+          },
+        },
+        {
+          breakpoint: 540,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 1500,
+                dots: false,
+            arrows: true,
+          },
+        },
+        {
+          breakpoint: 400,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: false,
+          autoplaySpeed: 1500,
+                 dots: false,
+             arrows: true,
+          },
+        },
+      ],
+    });
+
+
+    $(".alevel8_slider").slick({
+      slidesToShow: 3,
+      arrows: false,
+      dots: false,
+      slidesToScroll: 1,
+      autoplay:false,
+      centerMode: true,
+      centerPadding: '220px',
+      autoplaySpeed:1000,
+      responsive: [
+        {
+          breakpoint: 1400,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            centerPadding: '160px',
+          },
+        },
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            centerPadding: '120px',
+          },
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            centerPadding: '80px',
+          },
+        },
+        {
+          breakpoint: 540,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            centerPadding: '60px',
+          },
+        },
+      ],
+    });
+
 });
 
  // use a script tag or an external JS file

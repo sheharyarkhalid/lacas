@@ -2556,7 +2556,7 @@ object-fit: cover;
   padding-top: 33px;
 }
 .contact_us_form_fields input {
-  border: 1px solid #fff;
+  border: 1px solid #fff !important;
   background: #fff;
   height: 65px;
   padding: 0px 15px 0px 15px;

@@ -75,6 +75,10 @@
         <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->
         <script
             src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/EasePack.min.js"></script>
+
+            <!-- Google Maps JavaScript API with your API key -->
+  <script src="https://maps.googleapis.com/maps/api/js?&amp;v=3&amp;libraries=places&amp;key=AIzaSyDM8ikMpvgJYQCc6s2tEOcmiGeARH9F_IM"></script>
+  
         <!-- custom JS -->
         <script src="script.js"></script>
 
@@ -208,11 +212,66 @@
             </div>
         </section>
 
-        <section class="contact_sec2 d-inline-block float-start w-100">
+        <!-- <section class="contact_sec2 d-inline-block float-start w-100">
             <figure class="w-100 h-100"><img src="images/Group 1000007306.png"
                     class="w-100 h-100 object-fit-cover"></figure>
-        </section>
-
+        </section> -->
+        <style>
+            .map-embed {
+                filter: grayscale(100%) brightness(40%);
+              
+            }
+            .contact_map{
+                height: 750px;
+          
+        }
+        .contact_map:before{
+            content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    background: linear-gradient(to bottom, black, transparent) !important;
+    height: 130px;
+    z-index: 9;
+        }
+        .contact_map:after{
+            content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    background: linear-gradient(to top, black, transparent) !important;
+    height: 130px;
+    z-index: 9;
+        }
+        @media(max-width:1500px){
+            .contact_map {
+    height: 461px;
+}
+        }
+        @media(max-width:1024px){
+            .contact_map {
+    height: 300px;
+}
+.contact_map:before {
+    height: 90px;
+}
+.contact_map:after {
+    height: 90px;
+}
+        }
+        </style>
+        <div class="contact_map d-inline-block float-start w-100 position-relative">
+<iframe
+class="map-embed d-inline-block w-100 float-start border-0 h-100"
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.2231838157374!2d-79.7386388!3d43.5377713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3b5b0df2a927%3A0xe34bcda123456789!2sLocation%20Name!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus"
+width="100%"
+height="100%"
+allowfullscreen=""
+loading="lazy">
+</iframe>
+</div>
         <footer class="footer_parent d-flex flex-column w-100">
             <section class="newsletter_section d-inline-block w-100">
                 <div class="custom_container">
@@ -475,6 +534,130 @@
                 </div>
             </div>
         </div>
+
+        <script>
+            function initMap() {
+              // Define the black-and-white style array
+              const blackAndWhiteStyle = [
+                {
+                  "featureType": "all",
+                  "elementType": "labels.text.fill",
+                  "stylers": [
+                    { "saturation": 36 },
+                    { "color": "#000000" },
+                    { "lightness": 40 }
+                  ]
+                },
+                {
+                  "featureType": "all",
+                  "elementType": "labels.text.stroke",
+                  "stylers": [
+                    { "visibility": "on" },
+                    { "color": "#000000" },
+                    { "lightness": 16 }
+                  ]
+                },
+                {
+                  "featureType": "all",
+                  "elementType": "labels.icon",
+                  "stylers": [{ "visibility": "off" }]
+                },
+                {
+                  "featureType": "administrative",
+                  "elementType": "geometry.fill",
+                  "stylers": [
+                    { "color": "#000000" },
+                    { "lightness": 20 }
+                  ]
+                },
+                {
+                  "featureType": "administrative",
+                  "elementType": "geometry.stroke",
+                  "stylers": [
+                    { "color": "#000000" },
+                    { "lightness": 17 },
+                    { "weight": 1.2 }
+                  ]
+                },
+                {
+                  "featureType": "landscape",
+                  "elementType": "geometry",
+                  "stylers": [
+                    { "color": "#000000" },
+                    { "lightness": 20 }
+                  ]
+                },
+                {
+                  "featureType": "poi",
+                  "elementType": "geometry",
+                  "stylers": [
+                    { "color": "#000000" },
+                    { "lightness": 21 }
+                  ]
+                },
+                {
+                  "featureType": "road.highway",
+                  "elementType": "geometry.fill",
+                  "stylers": [
+                    { "color": "#000000" },
+                    { "lightness": 17 }
+                  ]
+                },
+                {
+                  "featureType": "road.highway",
+                  "elementType": "geometry.stroke",
+                  "stylers": [
+                    { "color": "#000000" },
+                    { "lightness": 29 },
+                    { "weight": 0.2 }
+                  ]
+                },
+                {
+                  "featureType": "road.arterial",
+                  "elementType": "geometry",
+                  "stylers": [
+                    { "color": "#000000" },
+                    { "lightness": 18 }
+                  ]
+                },
+                {
+                  "featureType": "road.local",
+                  "elementType": "geometry",
+                  "stylers": [
+                    { "color": "#000000" },
+                    { "lightness": 16 }
+                  ]
+                },
+                {
+                  "featureType": "transit",
+                  "elementType": "geometry",
+                  "stylers": [
+                    { "color": "#000000" },
+                    { "lightness": 19 }
+                  ]
+                },
+                {
+                  "featureType": "water",
+                  "elementType": "geometry",
+                  "stylers": [
+                    { "color": "#000000" },
+                    { "lightness": 17 }
+                  ]
+                }
+              ];
+        
+              // Initialize the map
+              const map = new google.maps.Map(document.getElementById("map"), {
+                center: { lat: 43.5377713, lng: -79.7286388 }, // Your specified latitude and longitude
+                zoom: 12, // Set zoom level
+                styles: blackAndWhiteStyle // Apply the custom style
+              });
+            }
+        
+            // Load the map once the API script has loaded
+            google.maps.event.addDomListener(window, "load", initMap);
+          </script>
+        
 
     </body>
 
