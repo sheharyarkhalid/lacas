@@ -24,7 +24,7 @@
    max-width: 1285px;
    margin: 0 auto; 
   }
-  .alevel1_slider figcaption {
+  .alevel1_slider_data {
     bottom: 130px;
     left: 0px;
     width: 100%;
@@ -156,7 +156,7 @@ color: #000;
     .alevel1_slider_dots_wrapper {
         bottom: 5%;
     }
-    .alevel1_slider figcaption {
+    .alevel1_slider_data {
         bottom: 80px;
     }
     .alevel1_des{
@@ -190,7 +190,7 @@ color: #000;
       font-size: 14px;
       line-height: 22px;
     }
-    .alevel1_slider figcaption {
+    .alevel1_slider_data {
         bottom: 40px;
     }
     .alevel1_slide_content img {
