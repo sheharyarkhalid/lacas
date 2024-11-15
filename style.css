@@ -86,7 +86,7 @@ button:focus-visible,input:focus-visible {
   width: 124px;
 }
 .reach_page_logo{
-  width: 44px;
+  width: 90px;
 }
 .header_listing a {
   font-size: 18px;
@@ -251,9 +251,9 @@ div#mobileMenu {
     padding-left: 10px;
     font-size: 13px;
   }
-  .header_logo {
-    width: 110px;
-  }
+  .reach_page_logo {
+    width: 80px;
+}
 }
 /* home banner style */
 .home_banner {
