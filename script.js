@@ -218,19 +218,11 @@ console.log('title',title);
            autoplaySpeed: 1500,
                dots: false,
            arrows: true,
+           centerMode: true,
+           centerPadding: '30px',
          },
        },
-       {
-         breakpoint: 400,
-         settings: {
-           slidesToShow: 1,
-           slidesToScroll: 1,
-           autoplay: false,
-         autoplaySpeed: 1500,
-                dots: false,
-            arrows: true,
-         },
-       },
+      
      ],
    });
 
@@ -490,19 +482,11 @@ centerPadding: '0px',
             autoplaySpeed: 1500,
                 dots: false,
             arrows: true,
+            centerMode: true,
+            centerPadding: '30px',
           },
         },
-        {
-          breakpoint: 400,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: false,
-          autoplaySpeed: 1500,
-                 dots: false,
-             arrows: true,
-          },
-        },
+        
       ],
     });
 

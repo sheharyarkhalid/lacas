@@ -86,7 +86,10 @@ button:focus-visible,input:focus-visible {
   width: 124px;
 }
 .reach_page_logo{
-  width: 44px;
+  width: 90px;
+}
+.a_level_logo {
+  width: 82px;
 }
 .header_listing a {
   font-size: 18px;
@@ -143,6 +146,10 @@ button:focus-visible,input:focus-visible {
 .header_toggle_btn i {
   color: #c0221f;
   font-size: 24px;
+  margin-left: 20px;
+}
+.header_toggle_btn img {
+  width: 36px;
   margin-left: 20px;
 }
 .header_btns a i {
@@ -251,9 +258,17 @@ div#mobileMenu {
     padding-left: 10px;
     font-size: 13px;
   }
-  .header_logo {
-    width: 110px;
-  }
+  .reach_page_logo {
+    width: 80px;
+}
+}
+@media (max-width: 540px) {
+.header_logo {
+  width: 85px;
+}
+.desk_header {
+  padding: 27px 20px;
+}
 }
 /* home banner style */
 .home_banner {
@@ -2237,7 +2252,7 @@ div#CampusesMenu .modal-fullscreen-sm-down .modal-content {
 
 @media (max-width: 768px) {
   .menu1_parent {
-    padding: 68px 20px 30px 20px;
+    padding: 30px 20px 85px 20px;
 }
   .menu1_header h5 {
     font-size: 30px;
@@ -2274,11 +2289,21 @@ div#CampusesMenu .modal-fullscreen-sm-down .modal-content {
     font-size: 30px;
   }
   .menu1_header a {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 0px;
     content: "";
+    width: 100%;
+    justify-content: center;
   }
+  .menu1_header a span {
+    background: #c0221f;
+    padding: 10px 115px;
+    text-decoration: none;
+}
+.menu1_header a i{
+  display: none;
+    }
   .menu1_header img {
     max-width: 120px;
     margin-right: 0px;
@@ -2425,7 +2450,7 @@ div#AcademicsMenu .modal-fullscreen-sm-down .modal-content {
 
 @media (max-width: 768px) {
   .menu2_parent {
-    padding: 68px 20px 30px 20px;
+    padding: 30px 20px 85px 20px;
 }
   .menu2_header h5 {
     font-size: 30px;
@@ -2442,11 +2467,22 @@ div#AcademicsMenu .modal-fullscreen-sm-down .modal-content {
     margin-bottom: 60px;
   }
   .menu2_header a {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 0px;
     content: "";
+    width: 100%;
+    justify-content: center;
   }
+  .menu2_header a span{
+    background: #c0221f;
+    padding: 10px 115px;
+    text-decoration: none;
+  }
+  .menu2_header a i{
+display: none;
+  }
+
   .menu2_header img {
     max-width: 120px;
     margin-right: 0px;
@@ -2672,6 +2708,62 @@ transition: 0.3s ease-in-out;
 }
 /* contact page section one end */
 
+/* contact map section css start  */
+.map-embed {
+  filter: grayscale(100%) brightness(40%);
+
+}
+
+.contact_map {
+  height: 750px;
+
+}
+
+.contact_map:after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  background: linear-gradient(to top, black, transparent) !important;
+  height: 130px;
+  z-index: 9;
+}
+.contact_map_heading {
+background-color: #000;
+color: #fff;
+font-family: Cormorant Garamond;
+font-size: 56px;
+font-weight: 700;
+line-height: 66px;
+padding: 42px 20px;
+}
+@media(max-width:1500px) {
+  .contact_map {
+      height: 461px;
+  }
+  .contact_map_heading {
+    font-size: 36px;
+    line-height: 38px;
+    padding: 30px 20px;
+}
+}
+
+@media(max-width:1024px) {
+  .contact_map {
+    height: 400px;
+}
+  .contact_map_heading {
+    font-size: 24px;
+    line-height: 31px;
+    padding: 15px 20px;
+}
+  .contact_map:after {
+      height: 90px;
+  }
+}
+/* contact map section css ends  */
+
 /* contact page css end */
 
 /* about page css start */
@@ -2684,7 +2776,10 @@ transition: 0.3s ease-in-out;
   grid-template-columns: 1fr 1fr;
   gap: 20px 80px;
 }
-
+.about_sec1_parent {
+  width: 100%;
+  grid-template-columns: 15% 85%;
+}
 .about_sec1_data small {
   font-size: 24px;
   font-weight: 400;
@@ -2710,12 +2805,11 @@ transition: 0.3s ease-in-out;
 .about_sec1_detail p strong {
   font-weight: 700;
 }
+
 @media (max-width: 1500px) {
-  .about_sec1_des {
-    padding-left: 122px;
-  }
+  .about_sec1_parent {
+    grid-template-columns: 8% 92%;
 }
-@media (max-width: 1500px) {
   .about_sec1_data h3 {
     font-size: 45px;
     line-height: 52px;
@@ -2733,10 +2827,14 @@ transition: 0.3s ease-in-out;
   }
 }
 @media (max-width: 1024px) {
-  .about_sec1_des {
-    padding-left: 0px;
-  }
-
+  .about_sec1_parent {
+    grid-template-columns: 5% 95%;
+}
+.about_sec1_des {
+  gap: 20px;
+  grid-template-columns: 1fr;
+  text-align: center;
+}
   .about_sec1_data small {
     font-size: 14px;
 
@@ -2785,6 +2883,9 @@ transition: 0.3s ease-in-out;
     font-size: 28px;
     line-height: 30px;
   }
+  .about_sec1_parent {
+    grid-template-columns: 100%;
+}
 }
 /* about page section one end */
 
@@ -2792,7 +2893,7 @@ transition: 0.3s ease-in-out;
 
 .about_sec2 {
   padding: 0px 0px 0px 20px;
-  margin-bottom: 120px;
+  margin-bottom: 220px;
   overflow: hidden;
 }
 
@@ -2896,6 +2997,15 @@ transition: 0.3s ease-in-out;
 }
 
 @media (max-width: 1500px) {
+
+  .about2_content h3 {
+    font-size: 28px;
+    line-height: 36px;
+    padding-bottom: 20px;
+  }
+  .about2_fig figcaption {
+    padding: 10px 30px 36px 30px;
+  }
   .about2_content_parent {
     grid-template-columns: 8% 92%;
   }
@@ -2909,19 +3019,7 @@ transition: 0.3s ease-in-out;
     line-height: 23px;
   }
 }
-@media (max-width: 1500px) {
-  .about_sec2 {
-    margin-bottom: 80px;
-  }
-  .about2_content h3 {
-    font-size: 28px;
-    line-height: 36px;
-    padding-bottom: 20px;
-  }
-  .about2_fig figcaption {
-    padding: 10px 30px 36px 30px;
-  }
-}
+
 @media (max-width: 1024px) {
   .about_sec2_arrow {
     padding: 0px 23px 0px 0px;
@@ -2971,12 +3069,24 @@ transition: 0.3s ease-in-out;
     padding: 10px 20px 10px 20px;
   }
 }
+@media (max-width: 540px) {
+  .about2_custom_box{
+  display: none !important;
+}
+.about_sec2 {
+  padding: 0px 0px 0px 0px;
+}
+.about2_content_parent {
+  grid-template-columns: 100%;
+}
+
+}
 /* about page section two end */
 
 /* about page section three start */
 .about_sec3 {
   padding: 0px 20px;
-  margin-bottom: 120px;
+  margin-bottom: 220px;
 }
 .about3_contnet {
   max-width: 1164px;
@@ -3010,9 +3120,7 @@ transition: 0.3s ease-in-out;
   color: #000;
 }
 @media (max-width: 1500px) {
-  .about_sec3 {
-    margin-bottom: 80px;
-  }
+
 }
 @media (max-width: 1024px) {
   .about_sec3 {
@@ -3361,3 +3469,5 @@ padding: 0px 0px 0px 0px !important;
 /* about page section seven end */
 
 /* about page css end */
+
+

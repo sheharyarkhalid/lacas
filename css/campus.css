@@ -66,6 +66,11 @@
     line-height: 22px;
   }
 }
+@media (max-width: 768px) {
+  .campus1_content img {
+    height: 400px !important;
+  }
+}
 /* campus page section 1 css end */
 
 
