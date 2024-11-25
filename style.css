@@ -89,7 +89,7 @@ button:focus-visible,input:focus-visible {
   width: 90px;
 }
 .a_level_logo {
-  width: 82px;
+  width: 62px;
 }
 .header_listing a {
   font-size: 18px;
@@ -267,7 +267,7 @@ div#mobileMenu {
   width: 85px;
 }
 .desk_header {
-  padding: 27px 20px;
+  padding: 20px 20px;
 }
 }
 /* home banner style */
