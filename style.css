@@ -3262,6 +3262,9 @@ padding: 42px 20px;
 .about_sec5 {
   margin-bottom: 120px;
 }
+.about5_res_img{
+  display: none;
+}
 @media (max-width: 1500px) {
   .about_sec5 {
     margin-bottom: 80px;
@@ -3272,6 +3275,18 @@ padding: 42px 20px;
     margin-bottom: 60px;
   }
 }
+@media (max-width: 540px) {
+  .about_sec5 figure{
+    overflow-x: auto;
+  }
+.about5_desk_img{
+  display: none;
+}
+.about5_res_img{
+  display: block;
+}
+}
+
 /* about page section five end */
 
 /* about page section six start */
