@@ -57,13 +57,17 @@
   .reach1_des2 {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
-
+    order: 1;
+  }
+  .reach1_des1 {
+    order: 2;
   }
   .reach1_des1 h2 {
     margin-top: 10px;
 }
   .reach1_des3 {
   gap: 10px;
+  order: 3;
 }
 }
 /* reach page section 1 css end */

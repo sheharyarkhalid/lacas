@@ -1,5 +1,13 @@
 $(document).ready(function () {
- 
+  $(".dropify").dropify({
+    messages: {
+        default: "Drag and drop or click to replace",
+        replace: "Drag and drop or click to replace",
+        remove: "Remove",
+        error: "Ooops, something wrong happended.",
+    },
+});
+
   $(".header_search_btn").click(function(){
     $(".search_input").toggleClass("active");
     $(".header_search_btn").toggleClass("active");

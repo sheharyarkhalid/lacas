@@ -1,9 +1,13 @@
 /* career page section 1 css start */
 .career_sec1 {
-  padding: 208px 20px 208px 20px;
+  padding: 278px 20px 308px 20px;
   margin-bottom: 120px;
-  background-color: #000;
+  background-image: url('../images/careerbanner.png');
+background-size: cover;
+background-repeat: no-repeat;
+
 }
+
 .career1_content h2{
   font-family: "Cormorant Garamond", serif;
   font-size: 75px;
@@ -21,7 +25,7 @@
 
 @media (max-width: 1500px) {
   .career_sec1 {
-    padding: 115px 20px 110px 20px;
+    padding: 150px 20px 160px 20px;
     margin-bottom: 80px;
   }
   .career1_content h2 {
@@ -36,11 +40,10 @@
  
 }
 @media (max-width: 1024px) {
+
   .career_sec1 {
+    padding: 130px 20px 110px 20px;
     margin-bottom: 60px;
-  }
-  .career_sec1 {
-    padding: 85px 20px 85px 20px;
 }
 .career1_content h2 {
   font-size: 36px;
@@ -50,11 +53,7 @@
   font-size: 11px;
 }
 }
-@media (max-width: 768px) {
-.career_sec1 {
-  padding: 85px 20px 48px 20px;
-}
-}
+
 /* career page section 1 css end */
 
 /* career page section 2 css start */
@@ -82,7 +81,48 @@
   line-height: 24px;
   color: #000;
 }
+.career2_box{
+  padding: 102px 20px;
+  background-image: url('../images/career2.png');
+background-size: cover;
+background-repeat: no-repeat;
 
+}
+.career2_box_content{
+  max-width:700px;
+  margin: 0 auto;
+}
+.career2_box_content h3{
+  font-family: "Cormorant Garamond", serif;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 66px;
+padding-bottom: 30px;
+  color: #fff;
+}
+.career2_box_content small{
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 35px;
+  padding-bottom: 30px;
+  color: #fff;
+}
+.career2_box_content p{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+padding-bottom: 60px;
+color: rgba(255,255,255,60%);
+}
+.career2_box_btn a{
+  background: #C0221F;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+padding: 5px 30px;
+ color: #fff !important;
+}
 @media (max-width: 1500px) {
   .career_sec2 {
     margin-bottom: 80px;
@@ -100,6 +140,18 @@
     line-height: 20px;
 
   }
+  .career2_box_content h3 {
+    font-size: 44px;
+    line-height: 47px;
+}
+.career2_box_content h3 {
+  font-size: 44px;
+  line-height: 47px;
+}
+.career2_box_content p {
+  font-size: 16px;
+}
+
 }
 @media (max-width: 1024px) {
   .career_sec2 {
@@ -107,6 +159,22 @@
   }
   .career2_content {
     gap: 15px 60px;
+}
+.career2_box_content h3 {
+  font-size: 36px;
+  line-height: 40px;
+  padding-bottom: 25px;
+}
+.career2_box_content small {
+  font-size: 18px;
+  line-height: 21px;
+  padding-bottom: 25px;
+}
+.career2_box_content p {
+  padding-bottom: 40px;
+}
+.career2_box {
+  padding: 50px 20px;
 }
 }
 @media (max-width: 768px) {
@@ -122,6 +190,13 @@
     grid-template-columns: 1fr;
     text-align: center;
     padding-bottom: 20px;
+}
+.career2_box_content h3 {
+  font-size: 30px;
+  line-height: 35px;
+}
+.career2_box_btn a {
+  font-size: 16px;
 }
 }
 /* career page section 2 css end */
@@ -250,6 +325,349 @@ color: rgba(0,0,0);
 
 
 }
+
 /* career page section 3 css end */
 
+
+/* career detail popup */
+#careerDetail{
+  padding: 20px 20px;
+  backdrop-filter: blur(30px);
+  background: #FFFFFF0D;
+}
+
+.career_detail_header {
+  grid-template-columns: 2fr 1fr;
+  gap: 20px 20px;
+  background: #000;
+  padding: 30px 20px;
+}
+.career_detail_heading h3{
+  font-family: "Cormorant Garamond", serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+  padding-bottom: 10px;
+  color: #fff;
+}
+.career_detail_heading small {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #C0221F;
+}
+.career_pop_listing strong{
+  padding: 0px 15px 0px 0px;
+  font-family: "Cormorant Garamond", serif;
+font-size: 25px;
+font-weight: 700;
+line-height: 35px;
+color: #fff;
+}
+.career_pop_listing strong svg{
+  padding-right: 10px;
+  font-size: 25px;
+}
+.career_pop_listing strong:last-child{
+  padding-right: 0px;
+}
+
+.career_detail_body{
+  padding: 60px 30px;
+
+}
+.career_detail_content h3{
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 35px;
+padding-bottom: 15px;
+color: #000;
+}
+.career_detail_content p{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000;
+}
+.career_detail_content p:last-child{
+padding-bottom: 0px;
+}
+.career_detail_footer{
+  background-color: #000;
+  padding: 30px 20px;
+}
+.career_detail_footer button{
+padding: 5px 30px;
+font-size: 18px;
+font-weight: 400;
+line-height: 24px;
+}
+.career_close_btn{
+border: 1px solid #fff;
+color: #fff;
+margin-right: 30px;
+background: transparent;
+}
+.career_apply_btn{
+  background: #C0221F;
+font-size: 18px;
+font-weight: 400;
+line-height: 24px;
+color: #fff;
+border: 1px solid #C0221F;
+}
+
+@media (max-width: 1500px) {
+  .career_detail_header {
+    grid-template-columns: 1.5fr 1fr;
+  }
+.career_detail_heading h3{
+  font-size: 24px;
+  line-height: 34px;
+}
+.career_detail_heading small {
+  font-size: 16px;
+  line-height: 22px;
+}
+.career_pop_listing strong {
+  font-size: 18px;
+  line-height: 24px;
+}
+}
+@media (max-width: 1024px) {
+.career_detail_heading h3 {
+  font-size: 20px;
+  line-height: 25px;
+}
+.career_detail_heading p {
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.career_detail_heading {
+  align-items: center;
+}
+.career_pop_listing {
+  justify-content: center !important;
+}
+
+.career_pop_listing strong {
+  width: 100%;
+}
+.career_detail_body {
+  padding: 30px 20px;
+}
+.career_detail_content p {
+  font-size: 14px;
+  line-height: 18px;
+  padding-bottom: 20px;
+}
+.career_pop_listing {
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.career_pop_listing strong {
+  padding: 0px 0px 15px 0px;
+}
+.career_pop_listing strong:last-child{
+  padding: 0px 0px 0px 0px;
+}
+.career_detail_header {
+  grid-template-columns: 1fr;
+}
+.career_detail_content h3 {
+  font-size: 22px;
+  line-height: 28px;
+}
+.career_close_btn {
+  margin-right: 15px;
+}
+.career_detail_footer button {
+  font-size: 16px;
+  line-height: 22px;
+}
+}
+@media(max-width:540px){
+  .career_detail_footer {
+    flex-direction: column !important;
+  }
+  .career_close_btn {
+    margin-right: 0px;
+    margin-bottom: 15px;
+}
+.career_detail_footer button {
+  width: 100%;
+}
+}
+
+/* career form submit responce popup */
+#careerSubmitResponce{
+  padding: 20px 20px;
+  backdrop-filter: blur(30px);
+  background: #FFFFFF0D;
+}
+.career_form_res_header {
+  background: #000;
+  padding: 30px 20px;
+}
+.career_form_res_header h3{
+  font-family: "Cormorant Garamond", serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+  color: #fff;
+}
+.career_res_body{
+  padding: 60px 30px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+.career_res_body h3{
+  font-family: "Cormorant Garamond", serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+padding-bottom: 30px;
+color: #000;
+}
+.career_res_body p{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000;
+}
+@media (max-width: 1500px) {
+.career_form_res_header h3{
+  font-size: 24px;
+  line-height: 34px;
+}
+.career_res_body h3{
+  font-size: 24px;
+  line-height: 34px;
+}
+}
+@media (max-width: 1024px) {
+  .career_res_body {
+    padding: 30px 20px;
+  }
+  .career_form_res_header h3 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .career_res_body h3{
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .career_res_body p {
+    font-size: 14px;
+    line-height: 18px;
+
+  }
+}
+
+/* career apply form  */
+#careerApply{
+  padding: 20px 20px;
+  backdrop-filter: blur(30px);
+  background: #FFFFFF0D;
+}
+.career_apply_body{
+  padding: 60px 30px;
+}
+.career_form_parent{
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 30px;
+}
+.career_form_fields {
+  display: grid;
+  width: 100%;
+  gap: 7px 0px;
+  padding-bottom: 13px;
+}
+
+.career_form_fields input {
+  border: 1px solid #fff !important;
+  background: #f5f5f5;
+  height: 65px;
+  padding: 0px 15px 0px 15px;
+  color: rgba(0, 0, 0, 50%);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  width: 100%;
+}
+.career_form_fields select {
+  border: 1px solid #fff !important;
+  background: #f5f5f5;
+  height: 65px;
+  padding: 0px 15px 0px 15px;
+  color: rgba(0, 0, 0, 50%);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  width: 100%;
+}
+.career_form_fields label.error {
+  color: #cc0000;
+  text-transform: capitalize;
+  margin: 0px !important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 11px;
+}
+.career_uploader {
+margin-top: 10px;
+}
+.career_uploader input{
+  height: 300px;
+}
+.dropify-wrapper *{
+  font-size: 26px !important;
+}
+.dropify-wrapper {
+  background: #C0221F !important;
+
+  font-weight: 700;
+  line-height: 30px !important;
+  text-align: center !important;
+  font-family: "Cormorant Garamond", serif !important;
+  color: #fff !important;
+  border-color: #C0221F !important;
+}
+
+@media (max-width: 1024px) {
+  .career_apply_body {
+    padding: 30px 20px;
+  }
+  .career_form_parent {
+    grid-template-columns: 1fr;
+    gap: 0px 30px;
+}
+.career_uploader {
+  margin-top: 0px;
+}
+
+}
+@media (max-width: 540px) {
+  .dropify-wrapper * {
+    font-size: 20px !important;
+  }
+}
+
+
+/* order type model style start */
+.modal.fade .modal-dialog.pop_zoom {
+  -webkit-transform: translate(0, 0) scale(0.5);
+  transform: translate(0, 0) scale(0.5);
+}
+
+.modal.show .modal-dialog.pop_zoom {
+  -webkit-transform: translate(0, 0) scale(1);
+  transform: translate(0, 0) scale(1);
+}
 
